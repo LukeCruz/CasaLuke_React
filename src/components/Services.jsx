@@ -1,11 +1,11 @@
 import React from 'react';
 
-class Artigos extends React.Component {
+class Services extends React.Component {
 render(){
     return(
 
-        <div class="artigos" id="">
-    <h3 class="titulo">serviços</h3>
+        <div class="services" id="">
+    <h4 class="titulo">serviços</h4>
     <h1>Como podemos ajudá-lo a se sentir melhor?</h1>
     
     <div class="CardContainer">
@@ -80,4 +80,4 @@ render(){
 
 }
 
-export default Artigos;
+export default Services;
