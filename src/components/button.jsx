@@ -4,7 +4,7 @@ class button extends React.Component {
 
 render() {
     return(
-        <button class="button" id="buttonTop">
+        <button className="button" id="buttonTop">
         <svg
           width="20"
           height="20"

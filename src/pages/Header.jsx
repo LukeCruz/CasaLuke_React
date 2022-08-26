@@ -8,36 +8,39 @@ import Services from '../components/Services';
 import About from '../components/About';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import ButtonFloat from '../components/ButtonFloat';
 
-class Header extends React.Component {
+class Main extends React.Component {
 render() {
     return(
+<div>
 
         <body className="body">
             <Navigation/>
-            <header class="header">
-
-                <div class="">
-                    <h4>BOAS-VINDAS A CASA LUKE 👋</h4>
-                    <h1>Hospedagens de qualidade</h1>
-                    <p>
+        <header className="header">
+            <div class="">
+              <h4>BOAS-VINDAS A CASA LUKE 👋</h4>
+              <h1>Hospedagens de qualidade</h1>
+              <p>
                         Temos a melhor infraestutura de casas de temporada de paraty, contamos com diversas opções de acomodacoes
-                    </p>
-
+              </p>
+              </div>
+              <div className="homePage">
                 <Button/>
                 <ImageWoman/>
                 <ContainerInfo/>
                 <Services/>
+              </div>
                 <About/>
                 <Contact/>
                 <Footer/>
-
-                </div>
-            </header>
+                <ButtonFloat/>
+        </header>
         </body>
+</div>
       );
     }
   }
 
-export default Header;
+export default Main;
 

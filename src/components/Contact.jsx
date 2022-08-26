@@ -5,11 +5,12 @@ import logo4 from '../assets/logo4.png';
 export default class Contact extends React.Component {
     render() {
         return(
-       <div>  <div class="contato">
-       <h1 class="tituloContato">Entre em contato com a gente!</h1>
-   <p class="info">Rua Bem Te Vi, 132 - Paraty</p>
-   <p class="info">(24) 99922-3881</p>
-     <button class="button buttonHover" id="buttonBottom" >
+
+        <div className="contato">
+       <h1 className="tituloContato">Entre em contato com a gente!</h1>
+   <p className="info">Rua Bem Te Vi, 132 - Paraty</p>
+   <p className="info">(24) 99922-3881</p>
+     <button className="button buttonHover" id="buttonBottom" >
        <svg
          width="20"
          height="20"
@@ -25,9 +26,9 @@ export default class Contact extends React.Component {
    
        Agende sua visita
      </button>
-     <img src={logo4} alt="logoTipo" class="imgLogo"/>
+     <img src={logo4} alt="logoTipo" className="imgLogo"/>
    </div>
-   </div>
+   
         )
     }
 };
