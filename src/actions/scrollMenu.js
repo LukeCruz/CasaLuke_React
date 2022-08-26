@@ -18,6 +18,9 @@ function onScrollToTop (){
 
     if (scrollY > 400) {
         scrollToTop.classList.add('show')
+
     } else {   
-        scrollToTop.classList.remove('show')}
+        scrollToTop.classList.remove('show')
+
+    }
 };

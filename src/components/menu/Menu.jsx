@@ -1,7 +1,5 @@
 import React from 'react';
 
-import Button from './button';
-
 class Menu extends React.Component {
     render() {
         return(
@@ -19,8 +17,9 @@ class Menu extends React.Component {
       </li>
     </ul>
     
-<Button className="buttonMenu buttonHover"/>
-
+<button className="buttonMenu buttonHover">Reserve já
+  </button>
+  
 <div className="socialLinks">
 
   <ul className="socialLogo">

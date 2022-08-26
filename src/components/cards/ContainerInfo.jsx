@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade';
 
 let scroll = Scroll.animateScroll;
 
-class containerInfo extends React.Component {
+class ContainerInfo extends React.Component {
     render() {
 return(
 
@@ -23,4 +23,4 @@ return(
     }
 }
 
-export default containerInfo ;
+export default ContainerInfo ;

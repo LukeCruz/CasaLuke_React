@@ -1,6 +1,6 @@
 import React from 'react';
 
-import logo4 from '../assets/logo4.png';
+import logo4 from '../../assets/logo4.png';
 
 export default class Contact extends React.Component {
     render() {

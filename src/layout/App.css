@@ -640,7 +640,7 @@
     position: fixed;
     bottom: 1rem;
     right: 2rem;
-    visibility: hidden;
+    visibility: visible;
   
     transform: translateY(100%);
     transition: transform 300ms;
