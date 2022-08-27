@@ -1,30 +1,31 @@
 import React from 'react';
 
-import Button from './button';
+const MenuTop = React.Component;
 
-class Menu extends React.Component {
+export default class Menu extends MenuTop {
     render() {
         return(
 
-    <div class="menu" id="menu">
+    <div className="menu" id="menu">
     <ul>
-      <li class="list"> 
-        <a class="listLink" onclick="closeMenu()" href="#homePage">inicio</a>
+      <li className="list"> 
+        <a className="listLink" onclick="closeMenu()" href="#homePage">inicio</a>
       </li>
-      <li class="list" >
-        <a class="listLink" onclick="closeMenu()" href="#about">Sobre </a>
+      <li className="list" >
+        <a className="listLink" onclick="closeMenu()" href="#about">Sobre </a>
       </li>
-      <li class="list">
-        <a class="listLink" onclick="closeMenu()" href="#services" >Serviços</a>
+      <li className="list">
+        <a className="listLink" onclick="closeMenu()" href="#services" >Serviços</a>
       </li>
     </ul>
     
-<Button className="buttonMenu buttonHover"/>
+<button className="buttonMenu buttonHover">Reserve já
+  </button>
+  
+<div className="socialLinks">
 
-<div class="socialLinks">
-
-  <ul class="socialLogo">
-    <li class="instagram">
+  <ul className="socialLogo">
+    <li className="instagram">
         <a href="https://www.instagram.com/lukeparaty/" 
            target="_blank" rel="noreferrer">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,7 +36,7 @@ class Menu extends React.Component {
         </a>
     </li>
 
-    <li class="facebook">
+    <li className="facebook">
        <a href="https://www.facebook.com.br/" 
           target="_blank" rel="noreferrer">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -44,7 +45,7 @@ class Menu extends React.Component {
         </a>
     </li>
 
-    <li class="google">
+    <li className="google">
       <a href="https://www.google.com.br" 
          target="_blank" rel="noreferrer">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,6 +61,4 @@ class Menu extends React.Component {
 
       );
     }
-  }
-
-export default Menu;
+  };

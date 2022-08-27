@@ -26,9 +26,10 @@
   body {
     font-family: "DM Sans";
     font-size: 1.6rem;
-    background-color: var(--brnad-light2);
+    background-color: none;
     text-align: center;
     overflow: overlay;
+    background: none;
   }
   
   
@@ -278,6 +279,11 @@
     list-style: none;
   }
   
+  a {
+    text-decoration:none;
+    style-decoration:none;
+  }
+
   header h4 {
     font-size: 1.4rem;
     color: var(--primary-color);
@@ -347,13 +353,13 @@
   
   /* ==================CLASSES=====================*/
   
-  header img.imageWoman {
+  .imageWoman {
     display: block;
     margin: auto;
     object-position: 0 2rem;
   }
   
-  header div.containerInfo {
+  .containerInfo {
     padding-block: 1rem;
     margin-inline: auto;
   
@@ -370,7 +376,7 @@
     background-color: var(--brand-beige);
   }
   
-  header div h3.numeros {
+  .numeros {
     font-size: 4.8rem;
   
     line-height: 130%;
@@ -380,7 +386,7 @@
     color: var(--headline);
   }
   
-  header div p.p1 {
+  .p1 {
     margin: 0;
     font-size: 1.6rem;
     line-height: 150%;
@@ -388,7 +394,7 @@
     color: var(--primary-color);
   }
   
-  header div.artigos {
+  header div.services {
     background: none;
     padding-top: 0%;
     width: 37.5rem;
@@ -473,12 +479,12 @@
     background: #ffffff;
   }
   
-  header div.sobreNos {
+  .sobreNos {
     background: #fffaf1;
     border-radius: 1.3rem;
   }
   
-  header img.imageSobreNos {
+  .imageSobreNos {
     width: 32.7rem;
     height: 28.2rem;
   
@@ -489,11 +495,11 @@
     margin-bottom: 1rem;
     margin-top: 6rem;
   }
-  header div.contato {
+  .contato {
     background-color: #ffffff;
   }
   
-  header h1.tituloContato {
+  .tituloContato {
     font-family: "DM Sans";
     font-style: normal;
     font-weight: 700;
@@ -520,7 +526,7 @@
     color: var(--paragraph);
   }
   
-  header button#buttonTop {
+  #buttonTop {
     /*=====container do botão=====*/
     margin-bottom: 6rem;
     margin-right: auto;
@@ -548,17 +554,17 @@
     background-color: var(--primary-color);
   }
   
-  header button#buttonTop:hover {
+  #buttonTop:hover {
     background-color: var(--brand-dark);
     
     
   }
   
-  header button#buttonBottom:hover {
+  #buttonBottom:hover {
     background-color: var(--brand-dark);
     
   }
-  header button#buttonBottom {
+  #buttonBottom {
     /*=====container do botao=====*/
     margin-bottom: 6rem;
     margin-right: auto;
@@ -602,7 +608,7 @@
     background-color: var(--primary-color);
   }
   
-  header footer p.paragrafoFooter {
+  .paragrafoFooter {
     font-family: "DM Sans";
     font-style: normal;
     font-weight: 400;
@@ -640,7 +646,7 @@
     position: fixed;
     bottom: 1rem;
     right: 2rem;
-    visibility: hidden;
+    visibility: visible;
   
     transform: translateY(100%);
     transition: transform 300ms;
