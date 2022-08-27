@@ -13,7 +13,12 @@ export default class About extends AboutUs {
         <h3 
           className="titulo">Sobre Nós</h3>
         <h1>Entenda quem somos e por que existimos</h1>
-        <p className="SobreNosArtigo">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+        <p className="SobreNosArtigo">
+          Buscamos a excelência em oferecer
+          as melhores soluções para que seu sonho , desejo , férias ou mesmo um pesseio de final de semana
+          sejam incríveis e inesqueciveis! Trazemos desde hospedagens aos mais variados tipos de serviço, tudo para que nossos hospedes, ammigos e parceiros 
+          tenham a melhor experiência possível. 
+          Nosso trabalho é realizar o seu Sonho!
         </p>
         <a href="https://casa-luke-paraty-praia-e-cachoeira-casa-inteira.ibooked.com.br/"
            target="_blank" 
