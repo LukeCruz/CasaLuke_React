@@ -1,8 +1,8 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 
 const ContainerInformation = React.Component;
 // import * as Scroll from 'react-scroll';
-// import Fade from 'react-reveal/Fade';
 // let scroll = Scroll.animateScroll;
 
 export default class ContainerInfo extends ContainerInformation {
@@ -12,10 +12,9 @@ export default class ContainerInfo extends ContainerInformation {
     <div  
         className="containerInfo" 
         id="containerInfo">
-    <h3 
-        className="numeros">
-        <a 
-        href='https://linkfly.to/maresestrellados
+    <Fade top>
+    <h3 className="numeros">
+        <a href='https://linkfly.to/maresestrellados
         ' 
         target="_blank" 
         rel="noreferrer"> 
@@ -33,6 +32,7 @@ export default class ContainerInfo extends ContainerInformation {
         <p 
         className="p1" 
         id="">Anos no mercado</p>
+    </Fade>
     </div>
 
     );
