@@ -1,6 +1,8 @@
 import React from 'react';
 
-class Services extends React.Component {
+const Service = React.Component;
+
+export default class Services extends Service {
 render(){
     return(
 
@@ -79,6 +81,4 @@ render(){
 
     );
   }
-}
-
-export default Services;
+};

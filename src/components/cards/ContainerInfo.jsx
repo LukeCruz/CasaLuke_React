@@ -1,26 +1,40 @@
 import React from 'react';
 
-import * as Scroll from 'react-scroll';
-import Fade from 'react-reveal/Fade';
+const ContainerInformation = React.Component;
+// import * as Scroll from 'react-scroll';
+// import Fade from 'react-reveal/Fade';
+// let scroll = Scroll.animateScroll;
 
-let scroll = Scroll.animateScroll;
-
-class ContainerInfo extends React.Component {
+export default class ContainerInfo extends ContainerInformation {
     render() {
-return(
+      return(
 
-    <div  className="containerInfo" id="containerInfo">
-    <h3 className="numeros">+20</h3>
-        <p className="p1">acomodações disponiveis</p>
-    <h3 className="numeros">+10000</h3>
-        <p className="p1">hospedagens realizadas</p>
-   <h3 className="numeros">+3</h3>
-        <p className="p1" id="">Anos no mercado</p>
-</div>
+    <div  
+        className="containerInfo" 
+        id="containerInfo">
+    <h3 
+        className="numeros">
+        <a 
+        href='https://linkfly.to/maresestrellados
+        ' 
+        target="_blank" 
+        rel="noreferrer"> 
+            +20
+        </a>
+    </h3>
+        <p  
+        className="p1">acomodações disponiveis</p>
+    <h3 
+        className="numeros">+10000</h3>
+        <p 
+        className="p1">hospedagens realizadas</p>
+    <h3 
+        className="numeros">+3</h3>
+        <p 
+        className="p1" 
+        id="">Anos no mercado</p>
+    </div>
 
-);
-
-    }
-}
-
-export default ContainerInfo ;
+    );
+  }
+};

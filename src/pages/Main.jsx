@@ -14,16 +14,16 @@ class Main extends React.Component {
 render() {
     return(
 
-        <body onScroll="onScroll()" className="" id="">
+        <body onScroll="onScroll()" className="" id="homePage">
             <Navigation/>
         <header>
-            <div class="" id="homePage">
+            <div class="" id="">
               <h4>BOAS-VINDAS A CASA LUKE 👋</h4>
               <h1>Hospedagens de qualidade</h1>
               <p>
                   Temos a melhor infraestutura de casas de temporada de paraty, contamos com diversas opções de acomodacoes
               </p>
-                <ButtonTop/>
+               <ButtonTop/>
                 <ImageWoman/>
                 <ContainerInfo/>
                 <Services/>

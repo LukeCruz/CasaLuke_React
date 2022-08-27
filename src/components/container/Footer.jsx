@@ -1,7 +1,8 @@
 import React from 'react';
 
+const EndPage = React.Component;
 
-export default class Footer extends React.Component {
+export default class Footer extends EndPage {
     render() {
         return (
 
@@ -47,6 +48,6 @@ export default class Footer extends React.Component {
   </ul>
 </div>
 </footer>
-        )
+        );
     }
-}
+};
