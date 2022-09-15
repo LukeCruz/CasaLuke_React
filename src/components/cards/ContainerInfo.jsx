@@ -11,8 +11,9 @@ export default function ContainerInfo() {
         id="containerInfo">
     <Fade top>
     <h3 className="numeros">
-        <a href='https://linkfly.to/maresestrellados
-        ' 
+        <a  
+        id="houseLinks" 
+        href='https://linkfly.to/maresestrellados' 
         target="_blank" 
         rel="noreferrer"> 
             +20

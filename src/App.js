@@ -1,11 +1,10 @@
+import React from 'react';
 import './layout/App.css';
-//import Routing from './routes/route';
-import Main from './pages/Main';
+import Routing from './routes/Routes';
 
-function App() {
-  return (
-   <Main/>
+export default function App() {
+    return (
+      <Routing/>  
   );
-}
+};
 
-export default App;

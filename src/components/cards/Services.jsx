@@ -5,8 +5,8 @@ export default function Services() {
 
     return(
         <div className="services" id="">
-    <h3 className="titulo">serviços</h3>
-    <h1>Como podemos ajudá-lo a encontrar o melhor lugar?</h1>
+    <h3 className="titulo titleServices">serviços</h3>
+    <h1 class="titleServices">Como podemos ajudá-lo a encontrar o melhor lugar?</h1>
 
     <div className="CardContainer">
       <div className="imgCard">   

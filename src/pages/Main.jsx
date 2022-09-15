@@ -17,9 +17,9 @@ export default function Main() {
             <Navigation/>
         <header>
             <div class="" id="">
-              <h4>BOAS-VINDAS A CASA LUKE 👋</h4>
+              <h4 class="intro">BOAS-VINDAS A CASA LUKE 👋</h4>
               <h1>Hospedagens de qualidade</h1>
-              <p>
+              <p class="intro">
                   Temos a melhor infraestutura de casas de temporada de paraty, contamos com diversas opções de acomodacoes
               </p>
                <ButtonTop/>
@@ -29,6 +29,7 @@ export default function Main() {
               </div>
                 <About/>
                 <Contact/>
+                <tripAdvisor/>
                 <Footer/>
                 <ButtonFloat/>
         </header>
