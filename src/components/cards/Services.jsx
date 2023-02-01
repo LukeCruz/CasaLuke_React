@@ -1,13 +1,25 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
+import houses from '../../assets/imgLuke.jpg';
 
 export default function Services() {
 
     return(
         <div className="services" id="">
-    <h3 className="titulo titleServices">serviços</h3>
-    <h1 class="titleServices">Como podemos ajudá-lo a encontrar o melhor lugar?</h1>
+    <h3 className="titulo "></h3>
+    <h1 className="titleServices">Como podemos ajudá-lo a encontrar o melhor lugar?</h1>
+   
+    <div class="box">
+  <div class="box__content">
+    <div class="box__front CardContainer">
+      <h1>Front</h1>
+    </div>
 
+    <div class="box__back CardContainer">
+      <h1>Back</h1>
+    </div>
+  </div>
+</div>
     <div className="CardContainer">
       <div className="imgCard">   
         <svg className="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

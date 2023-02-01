@@ -45,9 +45,7 @@ export default function Footer() {
     </li>
   </ul>
 </div>
-<img src={logo4} 
-            alt="logoTipo" 
-            className="imgLogo"/>
+
 
 </footer>
         );
