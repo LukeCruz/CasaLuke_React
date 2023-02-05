@@ -1,6 +1,7 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import houses from '../../assets/imgLuke.jpg';
+import escuna from '../../assets/escuna.jpeg'
 
 export default function Services() {
 
@@ -9,18 +10,11 @@ export default function Services() {
     <h3 className="titulo "></h3>
     <h1 className="titleServices">Como podemos ajudá-lo a encontrar o melhor lugar?</h1>
    
-    <div class="box">
-  <div class="box__content">
-    <div class="box__front CardContainer">
-      <h1>Front</h1>
-    </div>
 
-    <div class="box__back CardContainer">
-      <h1>Back</h1>
-    </div>
-  </div>
-</div>
-    <div className="CardContainer">
+
+<div class="box">
+  <div class="box__content">
+    <div class="box__front ">
       <div className="imgCard">   
         <svg className="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="12" cy="12" r="12" fill="#DCE9E2"/>
@@ -33,7 +27,15 @@ export default function Services() {
       </Fade>
     </div>
 
-    <div className="CardContainer">
+  <div class= 'box__back' >
+    <img src={houses} alt="" className='houses'/>
+    </div>
+  </div>
+</div>
+
+<div class="box">
+  <div class="box__content">
+    <div class="box__front ">
      <div className="imgCard">   
        <svg className="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="12" cy="12" r="12" fill="#DCE9E2"/>
@@ -46,9 +48,16 @@ export default function Services() {
         <p className="textCard">Passeios de Lancha, Jeep , Escunas, passeios culturais e muito mais disponivel para você na cidade de Paraty.</p>
       </Fade>
     </div>  
-    
-    <div className="CardContainer">
-      <div className="imgCard">   
+    <div class="box__back ">
+    <img src={escuna} alt="" className='houses'/>
+
+    </div>
+  </div>
+</div>
+
+<div class="box">
+  <div class="box__content">
+    <div class="box__front  ">      <div className="imgCard">   
         <svg className="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="12" cy="12" r="12" fill="#DCE9E2"/>
           <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -60,8 +69,15 @@ export default function Services() {
       </Fade>
     </div>
 
-    <div className="CardContainer">
-      <div className="imgCard">   
+    <div class="box__back tres">
+      <h1>Back</h1>
+    </div>
+  </div>
+</div>
+
+    <div class="box">
+  <div class="box__content">
+    <div class="box__front  ">      <div className="imgCard">   
         <svg className="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="12" cy="12" r="12" fill="#DCE9E2"/>
           <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -73,8 +89,15 @@ export default function Services() {
       </Fade>    
     </div>
 
-    <div className="CardContainer">  
-      <div className="imgCard">   
+    <div class="box__back quatro">
+      <h1>Back</h1>
+    </div>
+  </div>
+</div>
+
+    <div class="box">
+  <div class="box__content">
+    <div class="box__front  ">      <div className="imgCard">   
         <svg className="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="12" cy="12" r="12" fill="#DCE9E2"/>
           <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -86,8 +109,15 @@ export default function Services() {
       </Fade>
     </div>
 
-    <div className="CardContainer">
-      <div className="imgCard">   
+    <div class="box__back cinco ">
+      <h1>Back</h1>
+    </div>
+  </div>
+</div>
+
+    <div class="box">
+  <div class="box__content">
+    <div class="box__front ">      <div className="imgCard">   
         <svg className="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="12" cy="12" r="12" fill="#DCE9E2"/>
           <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -99,6 +129,10 @@ export default function Services() {
      </Fade>
     </div>    
   </div>
-
+  <div class="box__back sei1">
+      <h1>Back</h1>
+    </div>
+  </div>
+</div>
     );
   };

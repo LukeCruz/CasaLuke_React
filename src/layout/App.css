@@ -457,25 +457,41 @@ html {
   header div.services {
     background: none;
     padding-top: 0%;
-    right: 3rem;
-    left: 3rem;
-    top: 1.1rem;
+
     padding-block: 1rem;
+    margin-left: auto;
   
   }
 
+  .box {
+    background: transparent;
+    perspective: 600px;
+    width: 20.7rem;
+    height: 20.7rem;
+    margin-top: 5rem;
+
+  }
+  .box__content {
+    width: 20.7rem;
+    height: 20.7rem;
+    margin-left:  15rem; 
+
+
+  }
   header {
     width: 100%;
   }
   .containerInfo {
     padding-block: 1rem;
     margin-inline: auto;
+    margin-top: 3rem;
+
   
     border: 1px solid var(--brand-light);
     border-radius: 0.6rem;
   
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
   
     height: 470px;
     min-width:320px;
@@ -484,8 +500,9 @@ html {
     background-color: var(--brand-beige);
   }
     header div div .CardContainer {
-      width: 32.7rem;
+      width: 20.7rem;
       height: 20.7rem;
+      background-color: none;
     }
 
     .containersInfo {
@@ -556,6 +573,7 @@ html {
     font-weight: 400;
     font-size: 1.6rem;
     padding-top: 3rem;
+    margin-top: 5rem;
     line-height: 150%;
     padding: 2.4rem;
     color: var(--paragraph);
@@ -826,36 +844,50 @@ html {
   
 }
 
-.box {
-  background: transparent;
-  perspective: 1000px;
-}
+  .box {
+    background: transparent;
+    perspective: 100 0px;
+    width: 30.7rem;
+    height: 20.7rem;
+    position: relative;
+    padding: 0px;
+  }
 
-.box__content {
-  background: transparent;
-  width: 32.7rem;
-  height: 20.7rem;
-  position: relative;
-  transform-style: preserve-3d;
-  transform: rotateY(0deg);
-  transition: transform 600ms ease-in-out;
-}
+  .box__content {
+    background: var(--brand-beige);
+    border-radius: 0.7rem;
+    width: 30.7rem;
+    height: 20.7rem;
+    position: relative;
+    padding: 0px;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: transform 600ms ease-in-out;
 
-.box__front,
-.box__back {
-  position: absolute;
-  width: 32.7rem;
-  height: 20.7rem;
-  backface-visibility: hidden;
-}
+  }
 
-.box__back {
-  background: green;
-  transform: rotateY(180deg);
-  width: 32.7rem;
-  height: 20.7rem;
-}
+  .box__front,
+  .box__back {
+    position: absolute;
+  
+    backface-visibility: hidden;
+  }
+  .box_front {
+  
+  }
+  .box__back {
+    transform: rotateY(180deg);
+    width: 100%;
+    height: 100%;
+  }
 
-.box:hover .box__content {
-  transform: rotateY(180deg);
-}
+  .box:hover .box__content {
+    transform: rotateY(180deg);
+  }
+
+   .houses {
+    padding: 0px;
+    width: 100%;
+    height:100%;
+    border-radius: 0.5rem;
+  }
