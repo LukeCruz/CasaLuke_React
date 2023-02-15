@@ -443,7 +443,7 @@ html {
     height: 7rem;
     position: absolute;
     right: 29rem;
-    top: 33rem;
+    top: 33erem;
     transform: rotate(15deg);
   }
 
@@ -481,6 +481,7 @@ html {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    height: 5rem;
   }
 
   .conteinerLogotipoText {
@@ -620,7 +621,7 @@ html {
   .containerInfo {
     padding-block: 1rem;
     margin-inline: auto;
-    margin-top: 3rem;
+    margin-top: 1rem;
 
   
     border: 1px solid var(--brand-light);
@@ -665,6 +666,8 @@ html {
   }
   .p1-right {
     font-size: 13px;
+    width: 23rem;
+    margin-left: 1rem;
   }
 
   .imageUser {
@@ -674,7 +677,7 @@ html {
   }
 
   .userRating {
-    width: 5.3rem;
+    width: 5rem;
     height: 4rem;
   }
 
