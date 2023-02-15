@@ -51,11 +51,11 @@ export default function Main() {
            </div>
           </div>
 
+          <img src={coconut} className='coconut'/>
           <div className='conteinerLogotipoText'>
               <h4 className="intro showtext">BOAS-VINDAS A CASA LUKE 👋</h4>
               <div className='containerCoconut'>
               <h1 className='tourismText'>Turismo de qualidade</h1>
-              <img src={coconut} className='coconut'/>
               <img src={flip} className='flip'/>
               </div>
               <p className="intro">
@@ -72,6 +72,7 @@ export default function Main() {
               </div>
                 
               </div>
+                <Services/>
                 <About/>
               <Contact/>
                 <Footer/>

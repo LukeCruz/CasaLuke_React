@@ -431,26 +431,20 @@ html {
     flex-direction: row;
   }
   .coconut {
-    width: 15rem;
+    width: 20rem;
     height: 20rem;
     position: absolute;
-    right: 66rem;
-    transform: rotate(-8deg);
+    right: 65rem;
+    transform: rotate(-33deg);
   }
 
   .flip {
-    width: 7rem;
-    height: 7rem;
+    width: 8rem;
+    height: 8rem;
     position: absolute;
-    right: 29rem;
-    top: 33erem;
+    right: 10rem;
+    top: 33rem;
     transform: rotate(15deg);
-  }
-
-  .showcase{
-    width: 100%;
-    height: 100vh;
-
   }
 
   .showcase img {
@@ -487,10 +481,12 @@ html {
   .conteinerLogotipoText {
     background-image: url("../assets/backgroundCard_resized.png");
     border-radius: 2rem;
-    width: 40rem;
-    height: 30rem;
+    width: 50rem;
+    height: 37rem;
 
     margin-left: 20rem;
+
+    position: relative;
   }
 
   .imageWoman {
@@ -564,7 +560,9 @@ html {
   .titleServices {
    width: 50vw;
    padding-right: 4rem;
+   position: relative;
   }
+
   .services {
   }
   @media screen and (min-width:799px) {
@@ -579,7 +577,7 @@ html {
       flex-direction: row;
     }
     .titleServices {
-      color:hsl(210, 9%, 31%)
+     color: hsl(210, 11%, 15%);
   
     }
 
@@ -622,6 +620,7 @@ html {
     padding-block: 1rem;
     margin-inline: auto;
     margin-top: 1rem;
+    margin-bottom: 3rem;
 
   
     border: 1px solid var(--brand-light);
@@ -765,10 +764,8 @@ html {
   .sobreNos {
     background: white;
     border-radius: 1.3rem;
-
-    margin:auto;
     padding: 2.4rem;
-
+    margin:auto;
     min-width:320px;
     max-width:800px;
   }
@@ -885,9 +882,9 @@ html {
     align-items: center;
     justify-content: center;
     gap: 1.6rem;
-  
     transition: 200ms;
-    /*=====escrita do botao======*/
+
+  /*=====escrita do botao======*/
   
     font-size: 1.4rem;
     text-transform: uppercase;
@@ -1003,7 +1000,15 @@ html {
   
     transform: translateY(0);
   
-}
+  }
+
+  .iconDestine {
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    left: 7rem;
+    top:145rem;
+  }
 
   .box {
     background: transparent;
@@ -1012,11 +1017,12 @@ html {
     height: 20.7rem;
     position: relative;
     padding: 0px;
+    margin-left: 2rem;
   }
 
   .box__content {
     background: var(--brand-beige);
-    border-radius: 0.7rem;
+    border-radius: 3rem;
     width: 30.7rem;
     height: 20.7rem;
     position: relative;
@@ -1033,9 +1039,7 @@ html {
   
     backface-visibility: hidden;
   }
-  .box_front {
-  
-  }
+
   .box__back {
     transform: rotateY(180deg);
     width: 100%;
@@ -1050,5 +1054,5 @@ html {
     padding: 0px;
     width: 100%;
     height:100%;
-    border-radius: 0.5rem;
+    border-radius: 3rem;
   }

@@ -1,14 +1,16 @@
 import React from 'react';
-import houses from '../../assets/imgLuke.jpg';
+import houses from '../../assets/imgLuke3_resized.png';
 import escuna from '../../assets/escuna.jpeg'
+import iconDestione from '../../assets/destine.png';
+import beach from '../../assets/beach_resized.jpeg';
 
 export default function Services() {
 
     return(
         <div className="services" id="">
+            <img src={iconDestione} className='iconDestine'/>
     <h3 className="titulo "></h3>
     <h1 className="titleServices">Como podemos ajudá-lo a encontrar o melhor lugar?</h1>
-   
 
 
 <div class="box">
@@ -41,9 +43,7 @@ export default function Services() {
     </div>
       <p className="card">Passeios  
       </p>
-      <Fade top>
         <p className="textCard">Passeios de Lancha, Jeep , Escunas, passeios culturais e muito mais disponivel para você na cidade de Paraty.</p>
-      </Fade>
     </div>  
     <div class="box__back ">
     <img src={escuna} alt="" className='houses'/>
@@ -61,9 +61,7 @@ export default function Services() {
         </svg>
       </div>
       <p className="card">Mergulhos</p>
-      <Fade top>
         <p className="textCard">Mergulhos na bacia de Paraty, um dos lugares mais incriveis do Brasil para se conhecer a fauna e flora marinha! </p>
-      </Fade>
     </div>
 
     <div class="box__back tres">
@@ -81,9 +79,7 @@ export default function Services() {
         </svg>
       </div>
       <p className="card">Transporte</p>
-      <Fade top>
         <p className="textCard">Transfer, motoristas particulares, transporte até pontos turisticos e viagens de carro, van, ônibus ou barco. </p>
-      </Fade>    
     </div>
 
     <div class="box__back quatro">
@@ -101,9 +97,7 @@ export default function Services() {
         </svg>
       </div>
       <h1 className="card">Ilhas</h1>
-      <Fade top>
         <p className="textCard">São 65 ilhas paradisíacas na bacia da costa verde de Paraty, são opcões para todos os públicos </p>
-      </Fade>
     </div>
 
     <div class="box__back cinco ">
@@ -121,14 +115,12 @@ export default function Services() {
         </svg>
       </div>
       <h1 className="card">Praias</h1>
-     <Fade top> 
         <p className="textCard">Com as mais de 300 praias na cidade de Paraty , será um local ideal para você se conectar com a natureza e aproveitar a vista.</p>
-     </Fade>
     </div>    
   </div>
-  <div class="box__back sei1">
-      <h1>Back</h1>
-    </div>
+  <div class="box__back seis">
+    <img src={beach} className='houses'/>
+        </div>
   </div>
 </div>
     );
