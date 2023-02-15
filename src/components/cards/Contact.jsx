@@ -1,33 +1,29 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-import airbnb from '../../assets/airbnb.png';
-import booking from '../../assets/booking.com.png'
+import map from '../../assets/map.png';
+import contact from '../../assets/contact.png'
 
 export default function Contact() {
-        return(
+  return(
 
-          <div  className="contato">
-            <h1  className="tituloContato">Entre em contato com a gente!</h1>
-            <div class="certificates">
- 
- <a href="https://www.airbnb.com/rooms/51957247"
-   target="_blank" >
-   <img class="linkCertificates" src={airbnb}/>
-  </a>
-
-  <a href="https://www.booking.com/hotel/br/pouso-luke-paraty.en-us.html?aid=1784897;label=affnetawin-index_pub-101248_site-_pname-adgoal%20GmbH%20-%20Content_plc-_ts-at108427_a127447_m1_p147447_t14654_cBR_sSUBID_clkid-18119_1663205971_6fe3fc2c0e69040ce912b53afe2e8d18;sid=61ad9cb1c801e65a67f8853e733d8272;dist=0&keep_landing=1&sb_price_type=total&type=total&utm_content=101248&utm_source=affnetawin&utm_term=index&"
-     target="_blank">
-   <img src={booking} class="linkCertificatesBooking"></img>
-  </a>
-
-</div>
-              <p  className="info">Rua Bem Te Vi, 132 - Paraty</p>
-              <p  className="info">(24) 99922-3881</p>
-            
-        <a  href="https://wa.me/message/FZ3T42J3PJ5NH1" 
-            target="_blank" 
-            rel="noreferrer">
+    <div  className="contato">
+      <h1  className="tituloContato">Entre em contato com a gente!</h1>
+      <div class="certificates">
+    </div>
+    <div className='infoMaps'>
+    <img src={map} className='contactsIcon'/>
+    <p className="info">Rua Bemtevi 132 - Arel Do Taquari, Paraty RJ CEP : 23.970-000</p>
+    </div>
+    <div className='infoMaps contactIcon'>
+    <img src={contact} className='contactsIcon'/>
+    <p className="info"> 
+      Informações: (24) 9 9922-3881<br/>
+      Reservas: (24) 9 9860-3787</p>  
+    </div>  
+     <a  href="https://wa.me/message/FZ3T42J3PJ5NH1" 
+        target="_blank" 
+          rel="noreferrer">
           <button className="
           buttonContact button buttonHover" id="buttonBottom" >
               <svg

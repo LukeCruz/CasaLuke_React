@@ -1,5 +1,4 @@
 import React from 'react';
-import Fade from 'react-reveal/Fade';
 import houses from '../../assets/imgLuke.jpg';
 import escuna from '../../assets/escuna.jpeg'
 
@@ -22,9 +21,7 @@ export default function Services() {
         </svg>
       </div>
       <p className="card">Hospedagens</p>
-      <Fade top>
         <p className="textCard">Aqui você encontra o melhor local para curtir seu passeio! Casas de temporada, pousadas e muito mais!</p>
-      </Fade>
     </div>
 
   <div class= 'box__back' >

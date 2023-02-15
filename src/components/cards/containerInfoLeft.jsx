@@ -1,36 +1,50 @@
 import React from 'react';
-import Fade from 'react-reveal/Fade';
+import imageUser from '../../assets/user.png'
+import imageReview from '../../assets/review.png'
+import fifthRating from '../../assets/fifthRating.png';
+import fourthRating from '../../assets/fourthRating.png';
 
 // import * as Scroll from 'react-scroll';
 // let scroll = Scroll.animateScroll;
 
-export default function ContainerInfoLeft() {
+export default function ContainerInfoRight() {
       return(
     <div  
-        className="containerInfo" 
+        className="containerInfo containerInfoRight" 
         id="containerInfo">
-    <Fade top>
-    <h3 className="numeros">
-        <a  
-        id="houseLinks" 
-        href='https://linkfly.to/maresestrellados' 
-        target="_blank" 
-        rel="noreferrer"> 
-            +20
-        </a>
-    </h3>
+          <div className='containerInfoImage'>
+            <img
+                src={imageReview} 
+                alt="imagel" 
+                className="imageReview"/> 
+          </div>
+    <div className="containerGuestReview">
+      <img src={imageUser} className="imageUser"></img>
+      <h3 className="h3-right">Júlia Marques Alves</h3>
+      <img src={fifthRating} className="userRating"></img>
+
+    </div>
         <p  
-        className="p1">acomodações disponiveis</p>
-    <h3 
-        className="numeros">+10000</h3>
+        className="p1-right">
+            Maravilhoso, sem palavras para descrever o quanto tornaram nossa estadia inesquecível</p>
+    <div className="containerGuestReview">
+      <img src={imageUser} className="imageUser"></img>
+      <h3 className="h3-right">Vitoria Milena</h3>
+      <img src={fifthRating} className="userRating"></img>
+
+    </div>  
         <p 
-        className="p1"></p>
-    <h3 
-        className="numeros">+3</h3>
+        className="p1-right">
+            Gostamos bastante das acomodações, anfitrião solicito a todo momento ajudou muito com as dicas</p>
+    <div className="containerGuestReview">
+      <img src={imageUser} className="imageUser"></img>        
+      <h3 className="h3-right">Fábio Silva Cunha</h3>
+      <img src={fourthRating} className="userRating"></img>
+
+    </div>
         <p 
-        className="p1" 
-        id="">Anos no mercado</p>
-    </Fade>
+        className="p1-right">
+            Incrível como existe um local lindo e confortável nesse preço, sem dúvidas o melhor da cidade!</p>
     </div>
 
     );

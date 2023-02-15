@@ -1,6 +1,5 @@
 import React from 'react';
 
-import imageAbout from '../../assets/imgLuke3.png'
 import trip2020 from '../../assets/trip2020.png';
 import trip2021 from '../../assets/trip2021.jpg';
 import trip2022 from '../../assets/trip2022.jpg';
@@ -24,12 +23,6 @@ export default function About () {
           tenham a melhor experiência possível. 
           Nosso trabalho é realizar o seu Sonho!
         </p>
-        <a href="https://casa-luke-paraty-praia-e-cachoeira-casa-inteira.ibooked.com.br/"
-           target="_blank" 
-           rel="noreferrer">
-            <img src={imageAbout} 
-             alt="imagem dos quartos" 
-             class="imageSobreNos"/></a>
     </div>
   );
  }

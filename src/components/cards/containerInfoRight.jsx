@@ -1,37 +1,40 @@
 import React from 'react';
-import Fade from 'react-reveal/Fade';
-import imageUser from '../../assets/user.png'
+
+import travelImage from '../../assets/viajante.png';
 // import * as Scroll from 'react-scroll';
 // let scroll = Scroll.animateScroll;
 
-export default function ContainerInfoRight() {
+export default function ContainerInfoLeft() {
       return(
     <div  
-        className="containerInfo containerInfoRight" 
+        className="containerInfo" 
         id="containerInfo">
-    <Fade top>
-    <div className="containerGuestReview">
-      <img src={imageUser} className="imageUser"></img>
-      <h3 className="h3-right">Júlia Marques Alves</h3>
-    </div>
+              <div className='containerInfoImage'>
+            <img
+                src={travelImage} 
+                alt="imagel" 
+                className="imageTraveler"/> 
+          </div>
+    <h3 className="numeros">
+        <a  
+        id="houseLinks" 
+        href='https://linkfly.to/maresestrellados' 
+        target="_blank" 
+        rel="noreferrer"> 
+            +20
+        </a>
+    </h3>
         <p  
-        className="p1-right">
-            Maravilhoso, sem palavras para descrever o quanto tornaram nossa estadia inesquecível</p>
-    <div className="containerGuestReview">
-      <img src={imageUser} className="imageUser"></img>
-      <h3 className="h3-right">Vitoria Milena</h3>
-    </div>  
+        className="p1">acomodações disponiveis</p>
+    <h3 
+        className="numeros">+10000</h3>
         <p 
-        className="p1-right">
-            Gostamos bastante das acomodações, anfitrião solicito a todo momento ajudou muito com as dicas</p>
-    <div className="containerGuestReview">
-      <img src={imageUser} className="imageUser"></img>        
-      <h3 className="h3-right">Fábio Silva Cunha</h3>
-    </div>
+        className="p1"></p>
+    <h3 
+        className="numeros">+3</h3>
         <p 
-        className="p1-right">
-            Incrível como existe um local lindo e confortável nesse preço, sem dúvidas o melhor da cidade!</p>
-    </Fade>
+        className="p1" 
+        id="">Anos no mercado</p>
     </div>
 
     );
