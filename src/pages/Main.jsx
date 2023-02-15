@@ -12,8 +12,11 @@ import Contact from '../components/cards/Contact';
 import Footer from '../components/container/Footer';
 import ButtonFloat from '../components//buttons/ButtonFloat';
 
-import stars from '../assets/stars.png';
+import check from '../assets/check.png';
+import reputation from '../assets/award.png';
 import logo from '../assets/logo1.png';
+import coconut from '../assets/coconut-tree.png';
+import flip from '../assets/flip-flops.png'
 
 export default function Main() {
   return(
@@ -24,19 +27,39 @@ export default function Main() {
         <div className="" id=""> 
         <div className='containerLogotipo'>
           <div className='logoContainerImage'>
-          <img className='logoContainerLogotipo' src={logo}/>
-         <div className='containerStart'>
-          <h2 className='numeros percentContainerStart'>100% 
-          </h2>
-          <img className='stars' src={stars}></img>
+            <img className='logoContainerLogotipo' src={logo}/>
+         <div className='start' >
+            <div className='containerStart'>
+              <div className='iconStart'>
+              <h2 className=' percentContainerStart'>100% 
+              </h2>
+              <img className='stars' src={check}/>
+              </div>
+              <p className='subtittleStart'>Feedbacks</p>
+            </div>
+            
+
+            <div className='containerStart'>
+            <div className='iconStart'>
+              <h2 className=' percentContainerStart'>#1
+              </h2>
+              <img className='stars' src={reputation}/>
+              </div>
+              <p className='subtittleStart'>Excelência</p>
+            </div>
+            
+           </div>
           </div>
-          <p>Feedbacks</p>
-          </div>
+
           <div className='conteinerLogotipoText'>
               <h4 className="intro showtext">BOAS-VINDAS A CASA LUKE 👋</h4>
-              <h1>Hospedagens de qualidade</h1>
+              <div className='containerCoconut'>
+              <h1 className='tourismText'>Turismo de qualidade</h1>
+              <img src={coconut} className='coconut'/>
+              <img src={flip} className='flip'/>
+              </div>
               <p className="intro">
-                  Temos a melhor infraestutura de casas de temporada de paraty, contamos com diversas opções de acomodacoes
+                   Paraty na palma da sua mão
               </p>
               <ButtonTop/>
           </div>
