@@ -3,6 +3,7 @@ import houses from '../../assets/imgLuke3_resized.png';
 import escuna from '../../assets/escuna.jpeg'
 import iconDestione from '../../assets/destine.png';
 import beach from '../../assets/beach_resized.jpeg';
+import ocean from '../../assets/ocean.jpeg';
 
 export default function Services() {
 
@@ -10,12 +11,11 @@ export default function Services() {
         <div className="services" id="">
             <img src={iconDestione} className='iconDestine'/>
     <h3 className="titulo "></h3>
-    <h1 className="titleServices">Como podemos ajudá-lo a encontrar o melhor lugar?</h1>
+    <h1 className="titleServices">Encontre o melhor para você!</h1>
 
 
-<div class="box">
-  <div class="box__content">
-    <div class="box__front ">
+  
+    <div class="boxFront ">
       <div className="imgCard">   
         <svg className="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="12" cy="12" r="12" fill="#DCE9E2"/>
@@ -26,15 +26,9 @@ export default function Services() {
         <p className="textCard">Aqui você encontra o melhor local para curtir seu passeio! Casas de temporada, pousadas e muito mais!</p>
     </div>
 
-  <div class= 'box__back' >
-    <img src={houses} alt="" className='houses'/>
-    </div>
-  </div>
-</div>
+ 
 
-<div class="box">
-  <div class="box__content">
-    <div class="box__front ">
+    <div class="boxFront boxFrontTwo ">
      <div className="imgCard">   
        <svg className="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="12" cy="12" r="12" fill="#DCE9E2"/>
@@ -45,16 +39,10 @@ export default function Services() {
       </p>
         <p className="textCard">Passeios de Lancha, Jeep , Escunas, passeios culturais e muito mais disponivel para você na cidade de Paraty.</p>
     </div>  
-    <div class="box__back ">
-    <img src={escuna} alt="" className='houses'/>
 
-    </div>
-  </div>
-</div>
 
-<div class="box">
-  <div class="box__content">
-    <div class="box__front  ">      <div className="imgCard">   
+    <div class="boxFront boxFrontTree  ">     
+     <div className="imgCard">   
         <svg className="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="12" cy="12" r="12" fill="#DCE9E2"/>
           <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -64,15 +52,7 @@ export default function Services() {
         <p className="textCard">Mergulhos na bacia de Paraty, um dos lugares mais incriveis do Brasil para se conhecer a fauna e flora marinha! </p>
     </div>
 
-    <div class="box__back tres">
-      <h1>Back</h1>
-    </div>
-  </div>
-</div>
-
-    <div class="box">
-  <div class="box__content">
-    <div class="box__front  ">      <div className="imgCard">   
+    <div class="boxFront boxFrontFour  ">      <div className="imgCard">   
         <svg className="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="12" cy="12" r="12" fill="#DCE9E2"/>
           <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -82,15 +62,7 @@ export default function Services() {
         <p className="textCard">Transfer, motoristas particulares, transporte até pontos turisticos e viagens de carro, van, ônibus ou barco. </p>
     </div>
 
-    <div class="box__back quatro">
-      <h1>Back</h1>
-    </div>
-  </div>
-</div>
-
-    <div class="box">
-  <div class="box__content">
-    <div class="box__front  ">      <div className="imgCard">   
+    <div class="boxFront  boxFrontFive ">      <div className="imgCard">   
         <svg className="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="12" cy="12" r="12" fill="#DCE9E2"/>
           <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -100,15 +72,7 @@ export default function Services() {
         <p className="textCard">São 65 ilhas paradisíacas na bacia da costa verde de Paraty, são opcões para todos os públicos </p>
     </div>
 
-    <div class="box__back cinco ">
-      <h1>Back</h1>
-    </div>
-  </div>
-</div>
-
-    <div class="box">
-  <div class="box__content">
-    <div class="box__front ">      <div className="imgCard">   
+    <div class="boxFront boxFrontSix">      <div className="imgCard">   
         <svg className="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="12" cy="12" r="12" fill="#DCE9E2"/>
           <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -118,10 +82,6 @@ export default function Services() {
         <p className="textCard">Com as mais de 300 praias na cidade de Paraty , será um local ideal para você se conectar com a natureza e aproveitar a vista.</p>
     </div>    
   </div>
-  <div class="box__back seis">
-    <img src={beach} className='houses'/>
-        </div>
-  </div>
-</div>
+
     );
   };

@@ -73,8 +73,10 @@ export default function Main() {
                 
               </div>
                 <Services/>
+                <div className='containerAbout'>
                 <About/>
               <Contact/>
+              </div>
                 <Footer/>
         </header>
                 <ButtonFloat/>

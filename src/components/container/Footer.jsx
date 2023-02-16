@@ -4,7 +4,7 @@ import logo4 from '../../assets/logo4.png';
 
 export default function Footer() {
         return (
-<footer className="rodape">
+<footer className="footer">
   <h1 className="logo">Casa Luke</h1>
   <p className="paragrafoFooter">@2022 - Casa Luke</p>
   <p className="paragrafoFooter">Todos os direitos reservados</p>

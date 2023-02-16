@@ -3,11 +3,12 @@ import {Link} from 'react-router-dom';
 
 import map from '../../assets/map.png';
 import contact from '../../assets/contact.png'
+import crab from '../../assets/crab.png';
 
 export default function Contact() {
   return(
 
-    <div  className="contato">
+    <div  className="contact">
       <h1  className="tituloContato">Entre em contato com a gente!</h1>
       <div class="certificates">
     </div>
@@ -38,7 +39,7 @@ export default function Contact() {
        Agende sua visita
           </button>
         </a>
-
+   <img src={crab} className='crab'/>
 </div>
         );
     }
