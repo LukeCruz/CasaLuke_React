@@ -1,12 +1,17 @@
 import React from 'react';
 
 import logo4 from '../../assets/logo4.png';
+import booking from '../../assets/bookingcom.svg';
+import airbnb from '../../assets/airbnb.svg';
+import expedia from '../../assets/expedia.svg';
 
 export default function Footer() {
         return (
 <footer className="footer">
+
+  <div>
   <h1 className="logo">Casa Luke</h1>
-  <p className="paragrafoFooter">@2022 - Casa Luke</p>
+  <p className="paragrafoFooter">@2023 - Casa Luke</p>
   <p className="paragrafoFooter">Todos os direitos reservados</p>
 
 <div className="socialLinks">
@@ -44,9 +49,17 @@ export default function Footer() {
       </a>
     </li>
   </ul>
+
 </div>
-
-
+</div>
+<div className='partnersGroup'> 
+<p className='partnersText'>
+  Sites de confiança :
+</p>
+    <img src={booking} className='partners'/>
+    <img src={airbnb} className='partners'/>
+    <img src={expedia} className='partners'/>
+</div>
 </footer>
         );
     };
