@@ -13,14 +13,12 @@ return(
     <nav 
       id="navigation" 
       className="" >
-      <Menu/>
       <div className="wrapper">          
         <img 
           className="logotipo" 
           src={logo} 
           alt="logoMenu"/>
-        <ButtonCloseMenu/>
-        <ButtonOpenMenu/>           
+        
       </div>
     </nav>
 

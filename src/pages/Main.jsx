@@ -24,7 +24,7 @@ export default function Main() {
       <body onScroll="onScroll()" className="" id="homePage">
             <Navigation/>
         <header>
-        <div className="" id=""> 
+        <div className="a" id=""> 
         <div className='containerLogotipo'>
           <div className='logoContainerImage'>
             <img className='logoContainerLogotipo' src={logo}/>
@@ -65,7 +65,7 @@ export default function Main() {
           </div>
         </div>
               <ImageWoman/>
-              <div className="containersInfo">
+              <div className="containers">
               <ContainerInfoLeft/>
                 <ContainerInfo/>
                 <ContainerInfoRight/>
@@ -79,7 +79,7 @@ export default function Main() {
               </div>
                 <Footer/>
         </header>
-                <ButtonFloat/>
+        <ButtonFloat/>
         </body>
       );
 };

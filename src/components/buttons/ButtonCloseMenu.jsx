@@ -1,10 +1,18 @@
 import React from 'react';
+import { useState } from 'react';
+
+import Menu from '../menu/Menu';
 
 
 export default function ButtonCloseMenu(){
+
+  const [HideElement, setHideElement] = useState(true);
+  const ShowOrHide = () => setHideElement(false);
+
     return(
+      <div>
         <button 
-          onClick="closeMenu()" 
+          onClick={ShowOrHide}
           className="closeButton" 
           id="closeMenu">
         <svg 
@@ -21,5 +29,8 @@ export default function ButtonCloseMenu(){
           stroke-linejoin="round"/>
        </svg>  
        </button>
+       {HideElement ? null : null}
+       </div>
+
       );
    };

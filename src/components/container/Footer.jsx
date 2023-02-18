@@ -53,9 +53,7 @@ export default function Footer() {
 </div>
 </div>
 <div className='partnersGroup'> 
-<p className='partnersText'>
-  Sites de confiança :
-</p>
+
     <img src={booking} className='partners'/>
     <img src={airbnb} className='partners'/>
     <img src={expedia} className='partners'/>

@@ -1,11 +1,11 @@
 import React from 'react';
+import ButtonOpenMenu from '../buttons/ButtonOpenMenu';
 
 const MenuTop = React.Component;
 
 export default class Menu extends MenuTop {
     render() {
         return(
-
     <div className="menu" id="menu">
     <ul>
       <li className="list"> 
@@ -58,7 +58,6 @@ export default class Menu extends MenuTop {
   </ul>
 </div>
 </div>
-
       );
     }
   };
