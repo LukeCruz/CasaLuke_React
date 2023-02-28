@@ -1,13 +1,20 @@
 import React from 'react';
 
+import travelImage from '../../assets/viajante.png';
 // import * as Scroll from 'react-scroll';
 // let scroll = Scroll.animateScroll;
 
-export default function ContainerInfo() {
+export default function ContainerInfoLeft() {
       return(
     <div  
         className="containerInfo" 
         id="containerInfo">
+              <div className='containerInfoImage'>
+            <img
+                src={travelImage} 
+                alt="imagel" 
+                className="imageTraveler"/> 
+          </div>
     <h3 className="numeros">
         <a  
         id="houseLinks" 
@@ -22,7 +29,7 @@ export default function ContainerInfo() {
     <h3 
         className="numeros">+10000</h3>
         <p 
-        className="p1">hospedagens realizadas</p>
+        className="p1"></p>
     <h3 
         className="numeros">+3</h3>
         <p 

@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import api from '../services/api';
 
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import ProgressBar from 'react-bootstrap/ProgressBar';
-
 export default class Formulary extends Component {
     constructor(props) {
         super(props);
