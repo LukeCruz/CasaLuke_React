@@ -1,20 +1,20 @@
 import React from 'react';
 
-import Navigation from'../components/componentsMain/menu/Navigation';
-import ButtonTop from '../components/componentsMain/buttons/ButtonTop';
-import ImageWoman from '../components/componentsMain/container/imageWoman';
-import ContainerInfo from '../components/componentsMain/cards/ContainerInfo';
-import ContainerInfoLeft from '../components/componentsMain/cards/containerInfoLeft';
-import ContainerInfoRight from '../components/componentsMain/cards/containerInfoRight';
-import Services from '../components/componentsMain/cards/Services';
-import About from '../components/componentsMain/cards/About';
-import Contact from '../components/componentsMain/cards/Contact';
-import Footer from '../components/componentsMain/container/Footer';
-import ButtonFloat from '../components/componentsMain/buttons/ButtonFloat';
+import Navigation from'../components/menu/Navigation';
+import ButtonTop from '../components/buttons/ButtonTop';
+import ImageWoman from '../components/container/imageWoman';
+import ContainerInfo from '../components/cards/ContainerInfo';
+import ContainerInfoLeft from '../components/cards/containerInfoLeft';
+import ContainerInfoRight from '../components/cards/containerInfoRight';
+import Services from '../components/cards/Services';
+import About from '../components/cards/About';
+import Contact from '../components/cards/Contact';
+import Footer from '../components/container/Footer';
+import ButtonFloat from '../components//buttons/ButtonFloat';
 
 import check from '../assets/check.png';
 import reputation from '../assets/award.png';
-import logo from '../assets/logo2.png';
+import logo from '../assets/logo1.png';
 import coconut from '../assets/coconut-tree.png';
 import flip from '../assets/flip-flops.png'
 
@@ -24,7 +24,7 @@ export default function Main() {
       <body onScroll="onScroll()" className="" id="homePage">
             <Navigation/>
         <header>
-        <div className="a" id=""> 
+        <div className="" id=""> 
         <div className='containerLogotipo'>
           <div className='logoContainerImage'>
             <img className='logoContainerLogotipo' src={logo}/>
@@ -65,7 +65,7 @@ export default function Main() {
           </div>
         </div>
               <ImageWoman/>
-              <div className="containers">
+              <div className="containersInfo">
               <ContainerInfoLeft/>
                 <ContainerInfo/>
                 <ContainerInfoRight/>
@@ -79,7 +79,7 @@ export default function Main() {
               </div>
                 <Footer/>
         </header>
-        <ButtonFloat/>
+                <ButtonFloat/>
         </body>
       );
 };

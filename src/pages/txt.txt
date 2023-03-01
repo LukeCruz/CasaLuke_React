@@ -6,3 +6,36 @@
 
     <input id="buttonTop" type="submit"></input>  
     </form>
+
+.content {
+  position: relative;
+}
+
+.content h2 {
+  position: absolute;
+  color:black;
+  transform: translate(-50%, -50%);
+  font-size: 3.8rem;
+
+  
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 4px var(--primary-color);
+
+}
+.content h2:nth-child(2) {
+  color: var(--primary-color);
+  animation: animate 4s ease-in-out infinite;
+
+} 
+
+@keyframes animate {
+  0%,100%{
+    clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%,70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+  50%{
+    clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+}

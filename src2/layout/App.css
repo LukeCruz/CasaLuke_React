@@ -58,16 +58,18 @@ html {
   
   body .wrapper {
     background-color: var(--primary-color);
-    height: var(--nav-height);
     width: 100%;
+    height: var(--nav-height);
+  
     margin-right: 0;
     margin-left: 0;
     align-items: center;
     display: flex;
-      
+    justify-content: space-between;
+  
     padding-block: 1.6rem;
-    padding-inline: 2.4rem;
-    
+    padding-inline: 2.4remrem;
+  
     position: fixed;
     top: 0;
     left: 0;
@@ -82,34 +84,94 @@ html {
   }
   
   /* ==================NAVIGATION MENU=====================*/
-
-  .menu {
-    background-color: var(--primary-color);
+  body .menu {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    top: 7.2rem;
+    transform: translateY(100%);
+  }
+  
+  body div.menu,
+  body button.closeButton {
+    visibility: hidden;
+  }
+  
+  body.menu-expanded div.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateY(0%);
+    transition: transform 300ms;
+  
     width: 100vw;
     height: 100vh;
-    position: absolute;
-    transform: translateY(0%);
-    transition: transform 800ms;
+  
+    padding-top: var(--nav-height);
   }
   
+  body.menu-expanded  nav button.closeButton {
+    background: none;
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    margin-left: 33.5rem;
+    padding-inline: 0rem;
+    padding-block: 0rem;
+    
   
-  .menuExpanded {
-    background:none;
-    width: 100vw;
-    height: 10rem;
   }
-
   
   body nav {
     z-index: +1;
   }
   
+  body.menu-expanded div.menu,
+  body.menu-expanded button.closeButton {
+    visibility: visible;
+    position: fixed;
+    background-color: var(--primary-color);
+  }
+  
+  body.menu-expanded {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  body.menu-expanded > :not(nav) {
+    display: none;
+  }
+  
+  body.menu-expanded nav {
+    position: relative;
+  
+  }
+  
+  body.menu-expanded div.menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-color);
+    margin: 0;
+  }
   nav button {
     border: none;
     background-color: none;
     cursor: pointer;
+  }
+  body.menu-expanded .buttonMenu {
+    background-color: var(--brand-beige);
+    visibility: visible;
+    transition: 300ms;
+  }
+  
+  body.menu-expanded .buttonMenu:hover {
+    background-color: var(--primary-color);
+    color: var(--brand-beige);
+    border-color: var(--brand-dark);
   }
   
   body .buttonMenu {
@@ -121,7 +183,8 @@ html {
     height: 5.5rem;
   
     border-radius: 4rem;
-    margin:auto; 
+    margin-top: 5rem;
+  
     font-family: "DM Sans";
     font-style: normal;
     font-weight: 700;
@@ -133,20 +196,18 @@ html {
     color: var(--primary-color);
   }
   
-
-
-  body nav button.openButton {
-    visibility: hidden;
-  
-    
-  }
-  body nav button.closeButton {
+  body.menu-expanded nav button.openButton {
     background: none;
+    visibility: hidden;
     
+  }
+  body nav button.openButton {
+    background: none;
+    margin-left: calc(37.5rem - 17rem);
   
     
   }
-
+  
   body .socialLinks {
     justify-content: center;
     display: flex;
@@ -195,12 +256,12 @@ html {
     content: "";
     display: block;
   
+    position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
-    position: absolute;
     height: calc(95rem + var(--nav-height));
-    width: 100vw;
+    width: 100%;
     background-image: url("../assets/paraty1.jpg");
    background-color: var(--brand-light);
   }
@@ -213,7 +274,7 @@ html {
     display: block;
     background: var(--brand-light);
     z-index:-2;
-    position: absolute;
+    position:absolute;
     width: 100vw;
     
   }
@@ -295,61 +356,9 @@ html {
   }
   
   /* ==================CLASSES=====================*/
-  .logotipo {
-    width: 8rem;
-    height: 5rem;
-  }
   .containerLogotipo {
     display: flex;
     flex-direction: row;
-    margin: auto;
-  }
-
-  .ListMenuDesktop {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    left: 30rem;
-  }
-
-  .iconWhatsApp {
-    position: absolute;
-    right: 0rem;
-    top: 1rem;
-   
-  }
-
-  .buttonWhatsApp {
-
-    background: var(--primary-color);
-    margin-bottom: 6rem;
-    margin-right: 1rem;
-    margin-left: auto;
-    border-radius: 100rem;
-    border: none;
-    height: 5.6rem;
-    width: 10.7rem;
-  
-    
-  
-    transition: 200ms;
-  }
-
-  .buttonWhatsApp:hover {
-    background-color: var(--brand-dark);
-    
-    
-  }
-
-  .buttonNavigation {
-    position: absolute;
-    right: 2rem;
-    top: 2rem;
-    background-color: none;
-  }
-
-  .listDesktop {
-    margin-left: 8rem;
   }
 
   .logoContainerLogotipo {
@@ -378,7 +387,6 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 
   }
 
@@ -426,7 +434,7 @@ html {
     width: 20rem;
     height: 20rem;
     position: absolute;
-    right: 56rem;
+    right: 65rem;
     transform: rotate(-33deg);
   }
 
@@ -475,7 +483,9 @@ html {
     border-radius: 2rem;
     width: 50rem;
     height: 37rem;
+
     margin-left: 20rem;
+
     position: relative;
   }
 
@@ -505,39 +515,25 @@ html {
     margin: 0px;
     object-position: 1 2rem; 
   }
-  .containers {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-bottom: 4rem;
-  }
+  
   .containerInfo {
     padding-block: 1rem;
     margin-inline: auto;
-
+  
     border: 1px solid var(--brand-light);
     border-radius: 0.6rem;
-
+  
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+  
     height: 470px;
     width: 34.3rem;
-
+   
+  
     background-color: var(--brand-beige);
   }
-
-  .leftTextContainer {
-    font-size: 3.8rem;
   
-    line-height: 130%;
-    gap: 0.4rem;
-    margin-top: 4rem;
-  
-    color: var(--headline);
-  }
-
   .numeros {
     font-size: 4.8rem;
   
@@ -575,8 +571,89 @@ html {
   }
 
   .services {
-    padding-top: 5rem;
   }
+  @media screen and (min-width:799px) {
+ 
+
+    .services {
+      background-color: var(--brand-light);
+      padding-top: 10rem;
+      padding-bottom:5rem;
+      padding-left: 10rem;
+      display: flex;
+      flex-direction: row;
+    }
+    .titleServices {
+     color: hsl(210, 11%, 15%);
+  
+    }
+
+  }
+
+  .containersInfo {
+  display: flex;
+  flex-direction: row;
+  }
+
+@media screen and (max-width:800px) {
+  header div.services {
+    background: none;
+    padding-top: 0%;
+
+    padding-block: 1rem;
+    margin-left: auto;
+  
+  }
+
+  .box {
+    background: transparent;
+    perspective: 600px;
+    width: 20.7rem;
+    height: 20.7rem;
+    margin-top: 5rem;
+
+  }
+  .box__content {
+    width: 20.7rem;
+    height: 20.7rem;
+    margin-left:  15rem; 
+
+
+  }
+  header {
+    width: 100%;
+  }
+  .containerInfo {
+    padding-block: 1rem;
+    margin-inline: auto;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+
+  
+    border: 1px solid var(--brand-light);
+    border-radius: 0.6rem;
+  
+    display: flex;
+    flex-direction:column;
+  
+    height: 470px;
+    min-width:320px;
+    max-width:800px;
+  
+    background-color: var(--brand-beige);
+  }
+    header div div .CardContainer {
+      width: 20.7rem;
+      height: 20.7rem;
+      background-color: none;
+    }
+
+    .containersInfo {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
   .containerInfoRight {
    
   }
@@ -650,7 +727,6 @@ html {
     display: flex;
     flex-direction: row;
     margin: auto;
-    padding-top: 15rem;
   }
   header article.SobreNosArtigo {
     font-family: "DM Sans";
@@ -724,7 +800,7 @@ html {
     margin-top: 3rem;
     margin-bottom: 5rem;
     padding-left: 3rem;
-    padding-top: 1rem;
+    padding-top: 5rem;
     width: 60rem;
     border-radius: 1.3rem;
   }
@@ -752,7 +828,7 @@ html {
     height: 10rem;
     position: absolute;
     right: 20rem;
-    bottom: 118rem;
+    bottom: 108rem;
     transform: rotate(20deg);
   }
 
@@ -846,7 +922,7 @@ html {
     margin-top: 1.2rem;
 */
   }
-
+  
   header footer {
     /*width: 375px;TELA MOBILE*/
     
@@ -881,11 +957,11 @@ html {
   
   footer .socialLinks {
     justify-content: flex-start;
-  display: flex;
-    margin: auto;
-    padding: 0;
-    align-items: center;
-  /width:0rem;
+    //display: flex;
+    //margin: auto;
+    //padding: 0;
+    //align-items: center;
+    //width:0rem;
   
   }
 
@@ -1013,296 +1089,3 @@ html {
     border-radius: 3rem;
   }
 
-/* =============MOBILE=============*/
-
-  @media screen and (min-width:799px) {
-
-    .services {
-      background-color: white;
-      padding-top: 10rem;
-      padding-bottom:5rem;
-      padding-left: 10rem;
-      display: flex;
-      flex-direction: row;
-    }
-    .titleServices {
-     color: hsl(210, 11%, 15%);
-  
-    }
-
-  }
-
-
-@media screen and (max-width:800px) {
-
-  header {
-    width: 100vw;
-  }
-
-  body .wrapper {
-    background-color: var(--primary-color);
-    height: var(--nav-height);
-    width: 100%;
-    
-    display: flex;
-   
-    z-index: +2;
-  
-  }
-
-  body nav button.openButton {
-    width: 5rem;
-    height: 5rem;
-    background: none;
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-    visibility: visible;
-  
-    
-  }
-
-
-  .start {
-   display: flex;
-   flex-direction: row;
-   position: absolute;
-   top: 17rem;
-   left: 5rem;
-  }
-
-  .percentContainerStart {
-    font-size: 3.8rem;
-  
-    line-height: 130%;
-    gap: 0.4rem;
-    margin-top: 4rem;
-  
-    color: var(--brand-beige);
-  }
-
-  .containerLogotipo {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    margin-bottom: 3rem;
-
-    width: 100vw;
-  }
-  .logoContainerLogotipo {
-    width: 25rem;
-    height: 25rem;
-    position: absolute;
-    top: 2rem;
-    bottom: 4rem;
-    }
-
-  .conteinerLogotipoText {
-    background-image: url("../assets/backgroundCard_resized.png");
-    border-radius: 2rem;
-    width: 37rem;
-    height: 37rem;
-    margin: auto;
-    position: relative;
-    top: 20rem;
-  }
-  .containerImages {
-    padding-top: 18rem;
-  }
-
-  .coconut {
-    width: 8rem;
-    height: 8rem;
-    position: absolute;
-    left: 5rem;
-    top: 55rem;
-    transform: rotate(-33deg);
-    visibility: hidden;
-  }
-  .containerInfo {
-    padding-block: 1rem;
-    margin-inline: auto;
-    margin-bottom: 2rem;
-    background: var(--brand-beige);
-  }
-
-  .containers {
-    margin-inline: auto;
-    margin-bottom: 2rem;
-  
-    border: 1px solid var(--brand-light);
-    border-radius: 0.6rem;
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  
-    width: 34.3rem;
-   
-  
-    background: none;
-  }
-
-  .imageReview {
-    width: 10rem;
-    height: 10rem;
-    position: relative;
-    bottom: 3.5rem;
-    display: block;
-    margin: 0px;
-    object-position: 1 2rem;  
-    visibility: hidden;
-  }
-
-  .imageTraveler {
-    width: 14.5rem;
-    height: 14.5rem;
-    position: relative;
-    bottom: 10.5rem;
-    display: block;
-    margin: 0px;
-    object-position: 1 2rem; 
-    visibility: hidden;
-  }
-
-  .footer {
-    width: 100vw;
-  }
-
-  .partnersGroup {
-    flex-direction: column;
-    margin-left: 1rem;
-    padding-left: 2rem;
-  }
-
-  .partnersText {
-    margin-bottom: 15.4rem;
-  }
-  .containerAbout {
-    flex-direction: column;
-    margin-top: 4rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: 35rem;
-  }
-
-  .sobreNos {
-    background: white;
-    border-radius: 1.3rem;
-    padding-bottom: 4.4rem;
-    margin:auto;
-    width: 35rem;
-
-  }
-  .contact {
-    background-color: white;
-    margin:auto;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    padding-top: 5rem;
-    width: 35rem;
-    border-radius: 1.3rem;
-  }
-
-  .crab {
-    width: 5rem;
-    height: 5rem;
-    position: absolute;
-    right: 6rem;
-    bottom: 145rem;
-    transform: rotate(20deg);
-  }
-
-  .iconDestine {
-    position: absolute;
-    width: 15rem;
-    height: 15rem;
-    left: 20rem;
-    top:265rem;
-  }
-
-  .SobreNosArtigo {
-    font-size: 1.3rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  /*body {}
-  .a {
-    display: flex;
-    flex-direction: column;
-    width: 20rem;
-  }
-
-  .containerLogotipo {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-
-    background-color: red;
-  }
-
-  header div.services {
-    background-color: red;
-    padding-top: 0%;
-    
-    padding-block: 1rem;
-    margin: auto;
-  
-  }
-
-  .box {
-    background: transparent;
-    perspective: 600px;
-    width: 20.7rem;
-    height: 20.7rem;
-    margin-top: 5rem;
-
-  }
-  .box__content {
-    width: 20.7rem;
-    height: 20.7rem;
-    margin-left:  15rem; 
-
-
-  }
-  #homePage {
-    width: 100vw;
-  }
-  .containers {
-    padding-block: 1rem;
-    margin-inline: auto;
-    margin-bottom: 15rem;
-    align-items: center;
-    border: 1px solid var(--brand-light);
-    border-radius: 0.6rem;
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  
-    height: 470px;
-    width: 34.3rem;
-   
-  
-    background-color: blue;
-  
-  }
-    header div div .CardContainer {
-      width: 20.7rem;
-      height: 20.7rem;
-      background-color: none;
-    }
-
-    .containersInfo {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .containerAbout {
-      display: flex;
-      flex-direction: column;
-      margin: auto;
-      width: 30rem;
-    }*/
-  }

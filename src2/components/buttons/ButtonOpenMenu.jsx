@@ -1,10 +1,22 @@
 import React from 'react';
+import { useState } from 'react';
+
+import Menu from '../menu/Menu';
 
 export default function ButtonOpenMenu() {
 
+  const [showElement, setShowElement] = useState(false);
+
+  
+  const showOrHide = () => {
+    setShowElement(!showElement)
+  }
+
+
     return(
+<div className='menuExpanded'>
         <button 
-          onClick="openMenu()" 
+          onClick={showOrHide} 
           className="openButton" 
           id="openButton">
             <svg 
@@ -34,6 +46,7 @@ export default function ButtonOpenMenu() {
                   stroke-linejoin="round"/>                     
             </svg>
          </button>
-
+         {showElement ? (<Menu/>): null}
+</div>
       );
    };

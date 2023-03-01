@@ -1,0 +1,84 @@
+/* ==================GERAL=====================*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+    
+  html {
+    scroll-behavior: smooth;
+  }
+  
+    :root {
+      --primary-color: hsl(170, 100%, 26%);
+      --headline: hsl(210, 11%, 15%);
+      --paragraph: hsl(210, 9%, 31%);
+      --background-button: hsl(0, 0%, 100%);
+      --brand-beige: hsl(39, 100%, 97%);
+      --brand-light: hsl(148, 23%, 89%);
+      --brnad-light2: hsl(180, 14%, 97%);
+      --brand-dark: hsl(170, 100%, 14%);
+    
+      --nav-height: 7.2rem;
+    
+      font-size: 62.5%; /* 1rem = 10px */
+    }
+    
+    body {
+      font-family: "DM Sans";
+      font-size: 1.6rem;
+      background-color: none;
+      text-align: center;
+      overflow: overlay;
+      background:none;
+    }
+    
+   
+    
+    /* ==================NAVIGATION=====================*/
+    
+    nav.scroll {
+      width: 100vw;
+      margin-right: auto;
+      margin-left: auto;
+      height: var(--nav-height);
+      position: fixed;
+      top: 0;
+    
+      background-color: var(--primary-color);
+    }
+
+    .containerArticles {
+        position: absolute;
+        background: var(--brand-beige);
+        
+        border-radius: 3rem;
+        width: 70.7rem;
+        height: 20.7rem;
+        position: relative;
+        padding: 0px;
+        transition: 400ms;    }
+
+        header footer {
+            /*width: 375px;TELA MOBILE*/
+            
+            margin-bottom: 0rem;
+            margin-top: 4rem;
+            background-color: var(--primary-color);
+            display: flex;
+            flex-direction: row;
+          }
+   
+          @media screen and (max-width:800px) {
+            header {
+                width: 100vw;
+                display: grid;
+                place-items: center;
+            }
+              .footer {
+                width: 100vw;
+              }
+            
+            .containerArticles { 
+            width: 80vw;
+          }
+        }
