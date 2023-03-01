@@ -86,11 +86,11 @@ html {
   .menu {
     background-color: var(--primary-color);
     position: absolute;
+    left: 0rem;
     top: 7.2rem;
     width: 100vw;
     height: 100vh;
     position: absolute;
-    transform: translateY(0%);
     transition: transform 800ms;
   }
   
@@ -425,8 +425,8 @@ html {
   .coconut {
     width: 20rem;
     height: 20rem;
-    position: absolute;
-    right: 56rem;
+    position: relative;
+    left: 27rem;
     transform: rotate(-33deg);
   }
 
@@ -750,9 +750,9 @@ html {
   .crab {
     width: 10rem;
     height: 10rem;
-    position: absolute;
+    position: relative;
     right: 20rem;
-    bottom: 118rem;
+    bottom: 88rem;
     transform: rotate(20deg);
   }
 
@@ -1033,7 +1033,7 @@ html {
   }
 
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:1000px) {
 
   header {
     width: 100vw;
@@ -1062,6 +1062,10 @@ html {
     
   }
 
+  .ListMenuDesktop, 
+  .iconWhatsApp {
+    visibility: hidden;
+  }
 
   .start {
    display: flex;
@@ -1115,7 +1119,7 @@ html {
     height: 8rem;
     position: absolute;
     left: 5rem;
-    top: 55rem;
+    top: 45rem;
     transform: rotate(-33deg);
     visibility: hidden;
   }
