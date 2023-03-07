@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8a5cbd48.css",
+    "main.js": "/static/js/main.1672060e.js",
+    "static/media/paraty1.jpg": "/static/media/paraty1.6b3f6d4e6c8c39db33f0.jpg",
+    "static/media/imageWoman.png": "/static/media/imageWoman.efbe2959365390e87a30.png",
+    "static/media/ocean.jpeg": "/static/media/ocean.fa89aca5c59b60292aeb.jpeg",
+    "static/media/imgLuke3_resized.png": "/static/media/imgLuke3_resized.8d714ee9988b7fbfd0c5.png",
+    "static/media/escuna.jpeg": "/static/media/escuna.88614d4a0970e495e87d.jpeg",
+    "static/media/beach_resized.jpeg": "/static/media/beach_resized.aaa82e64d6d4d07b065d.jpeg",
+    "static/media/trip2021.jpg": "/static/media/trip2021.e91fd99934a3a82041df.jpg",
+    "static/media/trip2022.jpg": "/static/media/trip2022.3a537134a9251b6d72f0.jpg",
+    "static/media/logo1.png": "/static/media/logo1.98206929c78382871711.png",
+    "static/media/backgroundCard_resized.png": "/static/media/backgroundCard_resized.a06b15cd07f6d446170b.png",
+    "static/media/map.png": "/static/media/map.73948584a92a3fc87a6f.png",
+    "static/media/logo4.png": "/static/media/logo4.7d335a24f2a4eca585eb.png",
+    "static/media/coconut-tree.png": "/static/media/coconut-tree.55380d6b9e03b120a4e6.png",
+    "static/media/contact.png": "/static/media/contact.368dab1e646b9f43e23a.png",
+    "static/media/trip2020.png": "/static/media/trip2020.44c547ea47ad526a6ff1.png",
+    "static/media/destine.png": "/static/media/destine.3ab444354532a4e3cced.png",
+    "static/media/crab.png": "/static/media/crab.7bba1eda2d4d38ccfcb7.png",
+    "static/media/user.png": "/static/media/user.8d50b2933883498e6c93.png",
+    "static/media/review.png": "/static/media/review.f58dc31906f10856493b.png",
+    "static/media/flip-flops.png": "/static/media/flip-flops.759d0247dc9551b6140a.png",
+    "static/media/check.png": "/static/media/check.546e4e84e5d555b4ca1e.png",
+    "static/media/viajante.png": "/static/media/viajante.da4be6bad3a4e5fdb7d4.png",
+    "static/media/award.png": "/static/media/award.7ab4ade5de4ea5dae4bd.png",
+    "static/media/fourthRating.png": "/static/media/fourthRating.b64a34e3f2160c6a69fc.png",
+    "static/media/bookingcom.svg": "/static/media/bookingcom.3c6f99ebf671306d127005fdd90fd84b.svg",
+    "static/media/airbnb.svg": "/static/media/airbnb.96e62745de61aae4432961de96cd3905.svg",
+    "static/media/expedia.svg": "/static/media/expedia.b6bee3f5e5f2b58483ce3910d5a1067c.svg",
+    "index.html": "/index.html",
+    "main.8a5cbd48.css.map": "/static/css/main.8a5cbd48.css.map",
+    "main.1672060e.js.map": "/static/js/main.1672060e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8a5cbd48.css",
+    "static/js/main.1672060e.js"
+  ]
+}

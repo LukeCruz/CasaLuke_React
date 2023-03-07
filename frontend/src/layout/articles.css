@@ -1,0 +1,149 @@
+/* ==================GERAL=====================*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+    
+  html {
+    scroll-behavior: smooth;
+  }
+  
+    :root {
+      --primary-color: hsl(170, 100%, 26%);
+      --headline: hsl(210, 11%, 15%);
+      --paragraph: hsl(210, 9%, 31%);
+      --background-button: hsl(0, 0%, 100%);
+      --brand-beige: hsl(39, 100%, 97%);
+      --brand-light: hsl(148, 23%, 89%);
+      --brnad-light2: hsl(180, 14%, 97%);
+      --brand-dark: hsl(170, 100%, 14%);
+    
+      --nav-height: 7.2rem;
+    
+      font-size: 62.5%; /* 1rem = 10px */
+    }
+    
+    body {
+      font-family: "DM Sans";
+      font-size: 1.6rem;
+      background-color: none;
+      text-align: center;
+      overflow: overlay;
+      background:none;
+    }
+    
+    header footer {
+      /*width: 375px;TELA MOBILE*/
+      
+      margin-bottom: 0rem;
+      margin-top: 4rem;
+      background-color: var(--primary-color);
+      display: flex;
+      flex-direction: row;
+    }
+
+
+    /* ==================NAVIGATION=====================*/
+    
+    nav.scroll {
+      width: 100vw;
+      margin-right: auto;
+      margin-left: auto;
+      height: var(--nav-height);
+      position: fixed;
+      top: 0;
+    
+      background-color: var(--primary-color);
+    }
+
+    .articles {
+      padding-left: 5rem;
+      margin: auto;
+    }
+
+    .containerArticles {        
+        background: var(--brand-beige);
+        
+        border-radius: 3rem;
+        width: 80.7rem;
+        height: 20.7rem;
+        position: relative;
+        padding: auto;
+        margin-bottom: 5rem;
+        transition: 700ms;
+
+      }
+
+
+      .articleTitle {
+        font-size: 2.7rem;
+      }
+      .articleParagraph {
+        width: 60rem;
+        font-size: 1.5rem;
+        padding-left: 9rem;
+      }
+
+      .imagesArticles {
+        position: absolute;
+        left: 70.7rem;
+        top: 0rem;
+        width: 10rem;
+        height: 20.7rem;
+        border-radius: 3rem;
+        transition: 720ms;
+
+      }
+
+      .containerRow {
+        display: flex;
+      }
+
+      .hiddenPhrase {
+        visibility: hidden;
+        position:absolute;
+        left: 30.3rem;
+        top: 7.5rem;
+        width: 20rem;
+        height: 5rem;
+      }
+
+      .containerArticles:hover {
+        background-color: var(--brand-dark);
+        
+     }
+
+     .containerArticles:hover .articleTitle, 
+     .containerArticles:hover .articleParagraph {
+       visibility: hidden;
+     }
+   
+     .containerArticles:hover .hiddenPhrase{
+       visibility: visible;
+       color: var(--brnad-light2);
+      
+   }
+
+/*======================MOBILE======================================*/
+
+          @media screen and (max-width:800px) {
+            header {
+                width: 100vw;
+                display: grid;
+                place-items: center;
+            }
+              .footer {
+                width: 100vw;
+              }
+            
+            .containerArticles { 
+            width: 80vw;
+          }
+        }
+
+
+
+      .imageItem {
+        width: 20rem;
+        height: 20rem;
+      }

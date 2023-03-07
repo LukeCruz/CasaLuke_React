@@ -1,0 +1,44 @@
+/* ==================GERAL=====================*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+    
+  html {
+    scroll-behavior: smooth;
+  }
+  
+    :root {
+      --primary-color: hsl(170, 100%, 26%);
+      --headline: hsl(210, 11%, 15%);
+      --paragraph: hsl(210, 9%, 31%);
+      --background-button: hsl(0, 0%, 100%);
+      --brand-beige: hsl(39, 100%, 97%);
+      --brand-light: hsl(148, 23%, 89%);
+      --brnad-light2: hsl(180, 14%, 97%);
+      --brand-dark: hsl(170, 100%, 14%);
+    
+      --nav-height: 7.2rem;
+    
+      font-size: 62.5%; /* 1rem = 10px */
+    }
+
+    body {
+        width: 100rem;
+        background-color: red;
+    }
+    
+    div footer {
+        /*======width: 375px;TELA MOBILE=*/
+        
+        margin-bottom: 0rem;
+        margin-top: 4rem;
+        background-color: var(--primary-color);
+        display: flex;
+        flex-direction: row;
+      }
+  
+      .one {
+        width: 50rem;
+        margin: 0px;
+      }
