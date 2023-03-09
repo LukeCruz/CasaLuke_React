@@ -1,13 +1,5 @@
 /* ==================GERAL=====================*/
-* {
-    margin: 0;
-    box-sizing: border-box;
-  }
-    
-  html {
-    scroll-behavior: smooth;
-  }
-  
+
     :root {
       --primary-color: hsl(170, 100%, 26%);
       --headline: hsl(210, 11%, 15%);
@@ -24,8 +16,12 @@
     }
 
     body {
-        width: 100rem;
-        background-color: red;
+      font-family: "DM Sans";
+      font-size: 1.6rem;
+      background-color: none;
+      text-align: center;
+      overflow: overlay;
+      background:none;
     }
     
     div footer {
@@ -38,7 +34,50 @@
         flex-direction: row;
       }
   
-      .one {
-        width: 50rem;
-        margin: 0px;
+      .containerOnly {
+        padding-top: 0rem;
+        width: 100rem;
+        margin: auto;
+        justify-content:left;
+
+        background-color: var(--brnad-light2);
       }
+
+.title {
+  font-size: 5rem;
+  position: absolute;
+  top: 30rem;
+  left: 20rem;
+  color: var(--brnad-light2);
+}
+.imageOne {
+  width: 100rem;
+  height: 40rem;
+  border-radius: 1rem;
+}
+
+.containerOnly h1 {
+  color: var(--brand-dark);
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.containerOnly p {
+  width: auto;
+  text-align: left;
+  padding: 7rem;
+}
+
+.list {
+  display: block;
+  float: left;
+  padding-left: 10rem;
+}
+
+.subList {
+  list-style:numeral;
+  padding-top: 2rem;
+  text-align: left;
+  padding-left: 3rem;
+
+}

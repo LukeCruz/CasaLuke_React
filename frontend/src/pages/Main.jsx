@@ -17,6 +17,8 @@ import reputation from '../assets/award.png';
 import logo from '../assets/logo2.png';
 import coconut from '../assets/coconut-tree.png';
 import flip from '../assets/flip-flops.png'
+import crab from '../assets/crab.png';
+
 
 export default function Main() {
   return(
@@ -31,7 +33,7 @@ export default function Main() {
          <div className='start' >
             <div className='containerStart'>
               <div className='iconStart'>
-              <h2 className=' percentContainerStart'>100% 
+              <h2 className=' percentContainerStart '>100% 
               </h2>
               <img className='stars' src={check}/>
               </div>
@@ -76,6 +78,7 @@ export default function Main() {
                 <div className='containerAbout'>
                 <About/>
               <Contact/>
+              <img src={crab} className='crab'/>
               </div>
                 <Footer/>
         </header>

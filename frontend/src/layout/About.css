@@ -1,0 +1,144 @@
+/* ==================GERAL=====================*/
+
+  :root {
+    --primary-color: hsl(170, 100%, 26%);
+    --headline: hsl(210, 11%, 15%);
+    --paragraph: hsl(210, 9%, 31%);
+    --background-button: hsl(0, 0%, 100%);
+    --brand-beige: hsl(39, 100%, 97%);
+    --brand-light: hsl(148, 23%, 89%);
+    --brnad-light2: hsl(180, 14%, 97%);
+    --brand-dark: hsl(170, 100%, 14%);
+  
+    --nav-height: 7.2rem;
+  
+    font-size: 62.5%; /* 1rem = 10px */
+  }
+
+  body {
+    font-family: "DM Sans";
+    font-size: 1.6rem;
+    background-color: none;
+    text-align: center;
+    overflow: overlay;
+    background:none;
+  }
+
+  .titleAbout {
+      color: var(--brnad-light2);
+  }
+
+  .servicesAbout {
+      display: flex;
+      flex-direction: row;
+      background-image: url('../assets/backgroundCard.png');
+      margin: auto;
+      padding-left: 20rem;
+      align-items: center;
+      display: flex;
+      width: 120rem;
+      height: 40rem;
+      border-radius: 1rem;
+    }
+
+.boxFrontAboutOne {
+
+  background-image: url('../assets/hosts/booking-logo_resized.png');;
+  margin-left: 2rem;
+  border-radius: 3rem;
+  width: 24.7rem;
+  height: 20.7rem;
+  padding: 0px;
+  transition: 300ms;
+
+}
+.boxFrontAboutTwo {
+  background-image: url('../assets/hosts/airbnb-logo.png');
+  margin-left: 2rem;
+  border-radius: 3rem;
+  width: 24.7rem;
+  height: 20.7rem;
+  padding: 0px;
+  transition: 300ms;
+
+}
+
+.boxFrontAboutTree {
+  background-image: url('../assets/hosts/expedia-logo_resized.png');;
+  margin-left: 2rem;
+  border-radius: 3rem;
+  width: 24.7rem;
+  height: 20.7rem;
+  padding: 0px;
+  transition: 400ms;
+
+}
+
+.boxFrontAboutOne:hover {
+background-image: url('../assets/hosts/booking_resized.png');
+width: 367px;
+height: 367px;
+
+}
+
+.textButton {
+visibility: hidden;
+color: var(--brand-light);
+font-size: 0.5rem;
+transition: 400ms;
+}
+
+
+.boxFrontAboutTwo:hover {
+  background-image: url('../assets/hosts/airbnb_resized.webp');
+  width: 367px;
+  height: 367px;
+
+}
+
+.boxFrontAboutTree:hover {
+  background-image: url('../assets/hosts/expedia_resized.jpeg');
+  width: 367px;
+  height: 367px;
+
+}
+
+
+@media screen and (max-width:1000px) {
+
+  header {
+    width: 100vw;
+  }
+
+  .servicesAbout {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3rem;
+  background: none;
+  padding-left: 0rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxFrontAbout {
+padding-bottom: 3rem;
+}
+
+.boxFrontAbout:hover .textButton {
+visibility: visible;
+color: var(--brand-light);
+font-weight: 700;
+font-size: 3rem;
+}
+
+    .boxFrontAboutOne,
+    .boxFrontAboutTwo,
+    .boxFrontAboutTree {
+      
+      width: 30rem;
+      height: 40rem;
+
+    }
+  
+}

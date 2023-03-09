@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 import ButtonOpenMenu from '../buttons/ButtonOpenMenu';
 import ButtonWhatsApp from '../buttons/ButtonWhatsApp';
@@ -20,21 +21,22 @@ return(
 
 <ul className='ListMenuDesktop'>
       <li className="listDesktop"> 
-        <a className="listLink" href="#homePage">inicio</a>
+        <Link className="listLink" to='/'>inicio</Link>
       </li>
       <li className="listDesktop" >
-        <a className="listLink" href="#about">Sobre </a>
+        <Link className="listLink" to='/About'>Sobre </Link>
       </li>
       <li className="listDesktop">
-        <a className="listLink"  href="#services" >Serviços</a>
+        <Link className="listLink"  to="/services" >Serviços</Link>
       </li>
       <li className="listDesktop">
-        <a className="listLink"  href="#services" >Paraty</a>
+        <Link className="listLink"  to='articles' >Paraty</Link>
       </li>
       <li className="listDesktop">
       </li>
 
     </ul>
+
     <ButtonOpenMenu/>
     <ButtonWhatsApp/>
         </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ButtonOpenMenu from '../buttons/ButtonOpenMenu';
 
 const MenuTop = React.Component;
@@ -7,15 +8,18 @@ export default class Menu extends MenuTop {
     render() {
         return(
     <div className="menu" id="menu">
-    <ul>
+    <ul className='listMenuMobile'>
       <li className="list"> 
-        <a className="listLink" onclick="closeMenu()" href="#homePage">inicio</a>
+      <Link className="listLink" to='/'>inicio</Link>
       </li>
       <li className="list" >
-        <a className="listLink" onclick="closeMenu()" href="#about">Sobre </a>
+      <Link className="listLink" to='/About'>Sobre </Link>
       </li>
       <li className="list">
-        <a className="listLink" onclick="closeMenu()" href="#services" >Serviços</a>
+        <Link className="listLink"  to="/services" >Serviços</Link>
+      </li>
+      <li className="list">
+      <Link className="listLink"  to='articles' >Paraty</Link>
       </li>
     </ul>
     

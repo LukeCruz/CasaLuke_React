@@ -11,11 +11,12 @@ backup.scrollReveal.txt
 /coverage
 
 # production
-/frontend/build
+frontend/build
+**/node_modules
 
 # misc
 .DS_Store
-.env.local
+.env
 .env.development.local
 .env.test.local
 .env.production.local

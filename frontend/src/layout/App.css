@@ -164,17 +164,16 @@ html {
     padding: 1rem;
     align-items: center;
   }
-  
+
   body nav li.list {
-    padding: 4.7rem;
-  
+    padding: 0rem;
+    height: 2rem;
     font-family: "DM Sans";
     font-style: normal;
     font-weight: 700;
-    font-size: 2.4rem;
+    font-size: 4.4rem;
     line-height: 3.1rem;
     text-align: center;
-  
     color: var(--brand-beige);
   }
   
@@ -349,7 +348,19 @@ html {
   }
 
   .listDesktop {
-    margin-left: 8rem;
+    margin-left: 3rem;
+    width: 10rem;
+    height: 3.5rem;
+    border-radius: 0.6rem;
+    align-items: center;
+    padding-top: 0.5rem;
+    transition: 400ms;
+    
+  }
+
+  .listDesktop:hover {
+    background-color: var(--brand-dark);
+    border: 0.1px solid var(--brand-beige);
   }
 
   .logoContainerLogotipo {
@@ -475,7 +486,7 @@ html {
     border-radius: 2rem;
     width: 50rem;
     height: 37rem;
-    margin-left: 20rem;
+    margin-left: 5rem;
     position: relative;
   }
 
@@ -577,11 +588,14 @@ html {
   .services {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    background-color: var(--brnad-light2);
     margin: auto;
     padding: auto;
+    border-radius: 2rem;
     display: flex;
     width: 120rem;
-    height: 40rem;
+    height: 30rem;
     overflow-x:scroll;
     overflow-y: hidden;
   }
@@ -625,6 +639,8 @@ html {
     margin-top: 0.5rem;
     margin-left: 0rem;
     position: relative;
+    bottom: 1.3rem;
+    right: 5rem;
   }
   .card {
     position: static;
@@ -711,6 +727,7 @@ html {
     background: white;
     border-radius: 1.3rem;
     padding-bottom: 4.4rem;
+    padding-left: 3rem;
     margin:auto;
     width: 60rem;
 
@@ -733,7 +750,8 @@ html {
     margin:auto;
     margin-top: 3rem;
     margin-bottom: 5rem;
-    padding-left: 3rem;
+    margin-left: 3rem;
+    padding-left: 0.5rem;
     padding-top: 1rem;
     width: 60rem;
     border-radius: 1.3rem;
@@ -989,22 +1007,24 @@ html {
     top:145rem;
   }
 
+
   .boxFront {
     position: absolute;
     background: var(--brand-beige);
+    padding-left: 2rem;
     margin-left: 2rem;
+    border: 1px solid var(--primary-color);
     border-radius: 3rem;
     width: 24.7rem;
     height: 20.7rem;
     position: relative;
-    padding: 0px;
     transition: 400ms;
   
   }
 
   .boxFront:hover {
     background: var(--brand-dark);
-    width: 36.7rem;
+    width: 31.7rem;
     height: 23.7rem;
   }
 
@@ -1027,14 +1047,6 @@ html {
 
   @media screen and (min-width:799px) {
 
-    .services {
-      background-color: white;
-      padding-top: 10rem;
-      padding-bottom:5rem;
-      padding-left: 10rem;
-      display: flex;
-      flex-direction: row;
-    }
     .titleServices {
      color: hsl(210, 11%, 15%);
   
@@ -1043,204 +1055,236 @@ html {
   }
 
 
-@media screen and (max-width:1000px) {
+  @media screen and (max-width:1000px) {
 
-  header {
-    width: 100vw;
-  }
-
-  body .wrapper {
-    background-color: var(--primary-color);
-    height: var(--nav-height);
-    width: 100%;
+    header {
+      width: 100vw;
+    }
+  
+    body .wrapper {
+      background-color: var(--primary-color);
+      height: var(--nav-height);
+      width: 100%;
+      
+      display: flex;
+     
+      z-index: +2;
     
-    display: flex;
-   
-    z-index: +2;
+    }
   
-  }
-
-  body nav button.openButton {
-    width: 5rem;
-    height: 5rem;
-    background: none;
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-    visibility: visible;
-  
+    body nav button.openButton {
+      width: 5rem;
+      height: 5rem;
+      background: none;
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      visibility: visible;
     
-  }
-
-  .ListMenuDesktop, 
-  .iconWhatsApp {
-    visibility: hidden;
-  }
-
-  .start {
-   display: flex;
-   flex-direction: row;
-   position: absolute;
-   top: 17rem;
-   left: 5rem;
-  }
-
-  .percentContainerStart {
-    font-size: 3.8rem;
-  
-    line-height: 130%;
-    gap: 0.4rem;
-    margin-top: 4rem;
-  
-    color: var(--brand-beige);
-  }
-
-  .containerLogotipo {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    margin-bottom: 3rem;
-
-    width: 100vw;
-  }
-  .logoContainerLogotipo {
-    width: 25rem;
-    height: 25rem;
-    position: absolute;
-    top: 2rem;
-    bottom: 4rem;
+      
     }
 
-  .conteinerLogotipoText {
-    background-image: url("../assets/backgroundCard_resized.png");
-    border-radius: 2rem;
-    width: 37rem;
-    height: 37rem;
-    margin: auto;
-    position: relative;
-    top: 20rem;
-  }
-  .containerImages {
-    padding-top: 18rem;
-  }
+    .listMenuMobile {
+      display: flex;
+      flex-direction: column;
+    }
 
-  .coconut {
-    width: 8rem;
-    height: 8rem;
-    position: absolute;
-    left: 5rem;
-    top: 45rem;
-    transform: rotate(-33deg);
-    visibility: hidden;
-  }
-  .containerInfo {
-    padding-block: 1rem;
-    margin-inline: auto;
-    margin-bottom: 2rem;
-    background: var(--brand-beige);
-  }
-
-  .containers {
-    margin-inline: auto;
-    margin-bottom: 2rem;
+    body nav li.list {
+      padding: 4.7rem;
+     display: flex;
+     flex-direction: column;
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.4rem;
+      line-height: 3.1rem;
+      text-align: center;
+    
+      color: var(--brand-beige);
+    }
   
-    border: 1px solid var(--brand-light);
-    border-radius: 0.6rem;
+    .ListMenuDesktop, 
+    .iconWhatsApp {
+      visibility: hidden;
+    }
   
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    .start {
+     display: flex;
+     flex-direction: row;
+     position: absolute;
+     top: 17rem;
+     left: 1rem;
+    }
   
-    width: 34.3rem;
-   
+    .percentContainerStart {
+      font-size: 3.8rem;
+    
+      line-height: 130%;
+      gap: 0.4rem;
+      margin-top: 4rem;
+    
+      color: var(--brand-beige);
+    }
   
-    background: none;
-  }
-
-  .imageReview {
-    width: 10rem;
-    height: 10rem;
-    position: relative;
-    bottom: 3.5rem;
-    display: block;
-    margin: 0px;
-    object-position: 1 2rem;  
-    visibility: hidden;
-  }
-
-  .imageTraveler {
-    width: 14.5rem;
-    height: 14.5rem;
-    position: relative;
-    bottom: 10.5rem;
-    display: block;
-    margin: 0px;
-    object-position: 1 2rem; 
-    visibility: hidden;
-  }
-
-  .footer {
-    width: 100vw;
-  }
-
-  .partnersGroup {
-    flex-direction: column;
-    margin-left: 1rem;
-    padding-left: 2rem;
-  }
-
-  .partnersText {
-    margin-bottom: 15.4rem;
-  }
-  .containerAbout {
-    flex-direction: column;
-    margin-top: 4rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: 35rem;
-  }
-
-  .sobreNos {
-    background: white;
-    border-radius: 1.3rem;
-    padding-bottom: 4.4rem;
-    margin:auto;
-    width: 35rem;
-
-  }
-  .contact {
-    background-color: white;
-    margin:auto;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    padding-top: 5rem;
-    width: 35rem;
-    border-radius: 1.3rem;
-  }
-
-  .crab {
-    width: 5rem;
-    height: 5rem;
-    position: absolute;
-    right: 6rem;
-    bottom: 145rem;
-    transform: rotate(20deg);
-  }
-
-  .iconDestine {
-    position: absolute;
-    width: 15rem;
-    height: 15rem;
-    left: 20rem;
-    top:265rem;
-  }
-
-  .SobreNosArtigo {
-    font-size: 1.3rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
+    .containerLogotipo {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      margin-bottom: 3rem;
+  
+      width: 100vw;
+    }
+    .logoContainerLogotipo {
+      width: 25rem;
+      height: 25rem;
+      position: absolute;
+      top: 2rem;
+      bottom: 4rem;
+      }
+  
+    .conteinerLogotipoText {
+      background-image: url("../assets/backgroundCard_resized.png");
+      border-radius: 2rem;
+      width: 37rem;
+      height: 37rem;
+      margin: auto;
+      position: relative;
+      top: 20rem;
+    }
+    .containerImages {
+      padding-top: 18rem;
+    }
+  
+    .coconut {
+      width: 8rem;
+      height: 8rem;
+      position: absolute;
+      left: 5rem;
+      top: 45rem;
+      transform: rotate(-33deg);
+      visibility: hidden;
+    }
+    .containerInfo {
+      padding-block: 1rem;
+      margin-inline: auto;
+      margin-bottom: 2rem;
+      background: var(--brand-beige);
+    }
+  
+    .containers {
+      margin-inline: auto;
+      margin-bottom: 2rem;
+    
+      border: 1px solid var(--brand-light);
+      border-radius: 0.6rem;
+    
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    
+      width: 34.3rem;
+     
+    
+      background: none;
+    }
+  
+    .imageReview {
+      width: 10rem;
+      height: 10rem;
+      position: relative;
+      bottom: 3.5rem;
+      display: block;
+      margin: 0px;
+      object-position: 1 2rem;  
+      visibility: hidden;
+    }
+  
+    .imageTraveler {
+      width: 14.5rem;
+      height: 14.5rem;
+      position: relative;
+      bottom: 10.5rem;
+      display: block;
+      margin: 0px;
+      object-position: 1 2rem; 
+      visibility: hidden;
+    }
+  
+    .footer {
+      width: 100vw;
+    }
+  
+    .partnersGroup {
+      flex-direction: column;
+      margin-left: 1rem;
+      padding-left: 2rem;
+    }
+  
+    .partnersText {
+      margin-bottom: 15.4rem;
+    }
+    .containerAbout {
+      flex-direction: column;
+      margin-top: 4rem;
+      margin-left: auto;
+      margin-right: auto;
+      width: 35rem;
+    }
+  
+    .sobreNos {
+      background: white;
+      border-radius: 1.3rem;
+      padding-bottom: 4.4rem;
+      margin:auto;
+      width: 35rem;
+  
+    }
+    .contact {
+      background-color: white;
+      margin:auto;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      padding-top: 5rem;
+      width: 35rem;
+      border-radius: 1.3rem;
+    }
+  
+    .crab {
+      width: 5rem;
+      height: 5rem;
+      position: absolute;
+      right: 6rem;
+      bottom: 145rem;
+      transform: rotate(20deg);
+    }
+     .services {
+      background-color: none;
+      padding-top: 10rem;
+      padding-bottom:5rem;
+      display: grid;
+      flex-direction: column;
+      border-radius: 1rem;
+      width: 30rem;
+      height: auto;
+      overflow-x: visible;
+      overflow-y: visible;
+    
+    }
+  
+    .iconDestine {
+      position: absolute;
+      width: 15rem;
+      height: 15rem;
+      left: 20rem;
+      top:265rem;
+    }
+  
+    .SobreNosArtigo {
+      font-size: 1.3rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  
   /*body {}
   .a {
     display: flex;

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import beachParaty from '../../assets/imagesArticles/beachParaty.jpeg';
 
@@ -6,6 +7,7 @@ export default function ContainerArticles() {
     return (
       <div className="articles">
        
+       <Link to='/1'>
        <div className="containerArticles">
         <h1 className="hiddenPhrase">Ler mais...</h1>
        <h1 className="articleTitle">
@@ -20,7 +22,7 @@ export default function ContainerArticles() {
         <img className='imagesArticles' src={beachParaty}/>
         </div>
        </div>
-
+       </Link>
        <div className="containerArticles">
        <h1 className="hiddenPhrase">Ler mais...</h1>
 
