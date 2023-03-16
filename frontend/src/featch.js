@@ -5,27 +5,27 @@ import React from 'react';
 import api from './services/api';
 
 export default class App extends React.Component {
-  
+
   state = {
-    names : '',
+    names: '',
   }
 
-  async componentDidMount(){
+  async componentDidMount() {
     const response = await api.get('');
     const resp = response.data.results;
-  const one = resp[0]
-  const name = one.name;
-  this.setState({name : name})
+    const one = resp[0]
+    const name = one.name;
+    this.setState({ name: name })
 
-  console.log(name);
+    console.log(name);
   }
 
-    //const response = await api.post('http://localhost/user:?', { 
-  
-  render(){
-    const {name} = this.state;
-  return (
-  <div>nomes : {name} </div>
-  );
-};
+  //const response = await api.post('http://localhost/user:?', { 
+
+  render() {
+    const { name } = this.state;
+    return (
+      <div>nomes : {name} </div>
+    );
+  };
 }

@@ -1,23 +1,23 @@
 import React from 'react';
 
-import Navigation from'../components/componentsMain/menu/Navigation';
+import Navigation from '../components/componentsMain/menu/Navigation';
 import Footer from '../components/componentsMain/container/Footer';
 import ButtonFloat from '../components/componentsMain/buttons/ButtonFloat';
 import ContainerArticles from '../components/componentsArticles/ContainerArticles';
 
 export default function Articles() {
-  return(
+  return (
 
-      <body onScroll="onScroll()" className="" id="homePage">
-            <Navigation/>
-        <header>
-        <div className="" id=""> 
-         <ContainerArticles/>
+    <body onScroll="onScroll()" className="" id="homePage">
+      <Navigation />
+      <header>
+        <div className="" id="">
+          <ContainerArticles />
         </div>
 
-                <Footer/>
-        </header>
-        <ButtonFloat/>
-        </body>
-      );
+        <Footer />
+      </header>
+      <ButtonFloat />
+    </body>
+  );
 };

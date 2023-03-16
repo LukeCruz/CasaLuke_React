@@ -2,15 +2,15 @@ import React from 'react';
 
 
 export default function ButtonTop() {
-    return(
-      
-       <a className='iconWhatsApp' href="https://wa.me/message/FZ3T42J3PJ5NH1" 
-          target="_blank" 
-          rel="noreferrer">
-         <button 
-          className="buttonWhatsApp" 
-          id="buttonWhatsApp">
-         
+  return (
+
+    <a className='iconWhatsApp' href="https://wa.me/message/FZ3T42J3PJ5NH1"
+      target="_blank"
+      rel="noreferrer">
+      <button
+        className="buttonWhatsApp"
+        id="buttonWhatsApp">
+
         <svg
           width="30"
           height="30"
@@ -61,10 +61,10 @@ export default function ButtonTop() {
                    2.00001 13.8337 3.08334 15.8337 
                    6.25001C17.8337 9.50001 16.917 
                    13.75 13.667 15.75Z"
-          fill="white"
+            fill="white"
           />
         </svg>
       </button>
-      </a>
-    );
-  };
+    </a>
+  );
+};

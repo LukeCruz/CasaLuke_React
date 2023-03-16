@@ -1,5 +1,5 @@
 /* ==================GERAL=====================*/
-  
+
 :root {
   --primary-color: hsl(170, 100%, 26%);
   --headline: hsl(210, 11%, 15%);
@@ -9,14 +9,15 @@
   --brand-light: hsl(148, 23%, 89%);
   --brnad-light2: hsl(180, 14%, 97%);
   --brand-dark: hsl(170, 100%, 14%);
-    
+
   --nav-height: 7.2rem;
-    
-  font-size: 62.5%; /* 1rem = 10px */
-  }
-    
+
+  font-size: 62.5%;
+  /* 1rem = 10px */
+}
+
 .formGeneral {
-  width:100rem;
+  width: 100rem;
   font-family: "DM Sans";
   font-size: 1.4rem;
   background-color: var(--brnad-light2);
@@ -26,7 +27,7 @@
   padding-top: 10rem;
   margin: auto;
   border-radius: 2rem;
-    }
+}
 
 .form {
   padding: auto;

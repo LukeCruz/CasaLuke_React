@@ -9,19 +9,19 @@ import ArticlesOne from '../pages/ArticlesPages/ArticleOne';
 import About from '../pages/About';
 
 export default function Routing() {
-    return(
+    return (
         <Router>
             <Switch>
 
-            <Route path="/" exact={true} component={Main}/>
-            <Route path="/form" component={Formulary}/>
-            <Route path="/api" component={api}/>
-            <Route path='/articles' component={articles}/>
-            <Route path='/1' component={ArticlesOne}/>
-            <Route path='/about' component={About}/>
+                <Route path="/" exact={true} component={Main} />
+                <Route path="/form" component={Formulary} />
+                <Route path="/api" component={api} />
+                <Route path='/articles' component={articles} />
+                <Route path='/1' component={ArticlesOne} />
+                <Route path='/about' component={About} />
 
             </Switch>
-                
+
         </Router>
     )
 }

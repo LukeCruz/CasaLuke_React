@@ -1,18 +1,19 @@
 import React from 'react';
+import Table from 'react-bootstrap/Table';
 
 import Navigation from'../../components/componentsMain/menu/Navigation';
 import Footer from '../../components/componentsMain/container/Footer';
 import ButtonFloat from '../../components/componentsMain/buttons/ButtonFloat';
 import SocialLinks from '../../components/componentsArticles/SocialLinks';
 
-import imageOne from '../../assets/imagesArticles/beachParaty.jpeg';
+import imageOne from '../../assets/jpeg/beachParaty.jpeg';
 
 export default function ArticlesOne() {
   return(
-    <body onScroll="onScroll()" className="" id="homePage">
+    <body className="" id="homePage">
     <Navigation/>
 
-    <div>
+    <div className='articleTitle'>
       <h1 className='title'>10 melhores praias de Paraty</h1>
       <img className='imageOne' src={imageOne}></img>
     </div>
@@ -47,20 +48,80 @@ Em todo caso, se você for depender do transporte público, a empresa Colitur po
       Por fim, se você se interessou pela ideia de fazer um passeio de barco pelas praias de Paraty, no site 
       da Civitatis dá para reservar os dois tours mais tradicionais da cidade: escuna e lancha.
       </p>
-        <ul className='list'>
-          <li className='subList'>Praia do Pontal</li>
-          <li className='subList'>Praia do Jabaquara</li>
-          <li className='subList'>Praias de Trindade</li>
-          <li className='subList'>Praia do Sono</li>
-          <li className='subList'>Praias de Antigos e Antiguinhos</li>
-          <li className='subList'>Praia da Lula</li>
-          <li className='subList'>Praia de São Gonçalo</li>
-          <li className='subList'>Praia de Paraty-Mirim</li>
-          <li className='subList'>Praia grande</li>
-          <li className='subList'>Praia do Cruzeiro</li>
-        </ul>
-    </div>
 
+    </div>
+    <Table striped bordered hover className='list'>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Praia</th>
+          <th>Endereço</th>
+          <th>Recomendação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Praia do Pontal</td>
+          <td>rua bababab bababb alajklja lkajla</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Praia do Jabaquara</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td >Praia de São Gonçalo e São Gonçalinho</td>
+          <td>rua jajdjsklje klejrkejfdk</td>
+          <td>@twitter</td>
+        </tr>
+    <tr>
+          <td>4</td>
+          <td >Praia do Sono</td>
+          <td>rua jajdjsklje klejrkejfdk</td>
+          <td>@twitter</td>
+        </tr>
+    <tr>
+          <td>5</td>
+          <td >Praia do Iriri</td>
+          <td>rua jajdjsklje klejrkejfdk</td>
+          <td>@twitter</td>
+        </tr>
+    <tr>
+          <td>6</td>
+          <td >Praia da Lula</td>
+          <td>rua jajdjsklje klejrkejfdk</td>
+          <td>@twitter</td>
+        </tr>
+    <tr>
+          <td>7</td>
+          <td >Praia de Paraty-Mirim</td>
+          <td>rua jajdjsklje klejrkejfdk</td>
+          <td>@twitter</td>
+        </tr>
+  <tr>
+          <td>8</td>
+          <td >Praia de Paraty-Mirim</td>
+          <td>rua jajdjsklje klejrkejfdk</td>
+          <td>@twitter</td>
+        </tr>
+  <tr>
+          <td>9</td>
+          <td >Praia de Antigos</td>
+          <td>rua jajdjsklje klejrkejfdk</td>
+          <td>@twitter</td>
+        </tr>
+  <tr>
+          <td>10</td>
+          <td >Praia Grande</td>
+          <td>rua jajdjsklje klejrkejfdk</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </Table>
     <ButtonFloat/>
     </body>
   );

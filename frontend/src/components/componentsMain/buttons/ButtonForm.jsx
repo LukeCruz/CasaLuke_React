@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 
 export default function ButtonForm() {
 
-    return(
+    return (
         <Link to="/form">
 
-        <button className= "buttonForm"> 
-            clique aqui
-         </button>
+            <button className="buttonForm">
+                clique aqui
+            </button>
 
-        </Link>  
+        </Link>
 
-      );
-   };
+    );
+};
