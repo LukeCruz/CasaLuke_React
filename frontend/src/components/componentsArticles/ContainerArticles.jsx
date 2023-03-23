@@ -31,9 +31,8 @@ export default function ContainerArticles() {
             <div className="articles">
                 <div className="articlesLeft">
 
-                    <Link to='/1'>
+                    <Link to='/1' className="linkStyle">
                         <div className="containerArticles">
-                            <h1 className="hiddenPhrase">Ler mais...</h1>
                             <h1 className="articleTitle">
                                 Quais as 10 melhores praias de Paraty
                             </h1>
@@ -45,9 +44,8 @@ export default function ContainerArticles() {
                             </div>
                         </div>
                     </Link>
-
+                    <Link to='/2' className="linkStyle">
                     <div className="containerArticles">
-                        <h1 className="hiddenPhrase2">Ler mais...</h1>
 
                         <h1 className="articleTitle">
                             Um guia completo de Paraty
@@ -57,9 +55,22 @@ export default function ContainerArticles() {
                             Paraty está em uma das mais lindas baías do país.
                         </p>
                     </div>
-
+                    </Link>
+                    <Link to='/3' className="linkStyle">
                     <div className="containerArticles">
-                        <h1 className="hiddenPhrase3">Ler mais...</h1>
+
+                        <h1 className="articleTitle">
+                            Saco do mamangua -O fiorde Brasileiro
+                        </h1>
+                        <p className="articleParagraph">
+                            Já ouviu falar no Saco do Mamanguá? Esse paraíso pouco explorado no litoral do Rio 
+                            de Janeiro está localizado no município de Paraty e é um excelente destino para uma 
+                            viagem de final de semana. Descubra onde é...
+                        </p>
+                    </div>
+                    </Link>
+                    <Link to='/4' className="linkStyle">
+                    <div className="containerArticles">
 
                         <h1 className="articleTitle">
                             Titulo
@@ -68,20 +79,9 @@ export default function ContainerArticles() {
                             paragrafo
                         </p>
                     </div>
-                    <div className="containerArticles">
-                        <h1 className="hiddenPhrase4">Ler mais...</h1>
-
-                        <h1 className="articleTitle">
-                            Titulo
-                        </h1>
-                        <p className="articleParagraph">
-                            paragrafo
-                        </p>
-                    </div>
-
+                    </Link>
 
                     <div className="containerArticles">
-                        <h1 className="hiddenPhrase5">Ler mais...</h1>
 
                         <h1 className="articleTitle">
                             Titulo
@@ -92,7 +92,6 @@ export default function ContainerArticles() {
                     </div>
 
                     <div className="containerArticles">
-                        <h1 className="hiddenPhrase6">Ler mais...</h1>
 
                         <h1 className="articleTitle">
                             Titulo

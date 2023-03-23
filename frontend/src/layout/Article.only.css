@@ -31,6 +31,19 @@ div footer {
   color: var(--brnad-light2);
 }
 
+.titleTable {
+  color: var(--primary-color);
+  margin-left: 30rem;
+}
+
+.titlePt {
+  margin-left: 5rem;
+  font-size: 3rem;
+}
+
+.paragraphPt {
+  font-size: 1.6rem;
+}
 .imageOne {
   width: 100rem;
   height: 40rem;
@@ -54,6 +67,7 @@ div footer {
 .list {
   display: block;
   float: left;
-  padding-left: 15rem;
-  width: 80rem;
+  padding-left: 40rem;
+  width: 100rem;
+font-size: 1rem;
 }

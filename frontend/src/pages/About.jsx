@@ -14,7 +14,6 @@ export default function Main() {
       <Navigation />
       <header>
         <Toast />
-        <Canva />
         <h1 className=' titleAbout '>Reserve aqui também :</h1>
 
         <div className=" servicesAbout dragscroll " id="">

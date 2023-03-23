@@ -177,7 +177,7 @@ nav.scroll {
   height: 15.7rem;
   margin: auto;
   margin-bottom: 3rem;
-  transition: 700ms;
+  transition: 100ms;
 
 }
 
@@ -193,6 +193,10 @@ nav.scroll {
 
 }
 
+.linkStyle {
+  text-decoration: none;
+}
+
 .imagesArticles {
   position: absolute;
   left: 70.7rem;
@@ -205,85 +209,11 @@ nav.scroll {
 }
 
 .containerRow {
-  display: flex;
+display: flex;
 }
 
-.hiddenPhrase,
-.hiddenPhrase2,
-.hiddenPhrase3,
-.hiddenPhrase4,
-.hiddenPhrase5,
-.hiddenPhrase6 {
-  visibility: hidden;
-  font-size: 2.5rem;
-  width: 20rem;
-  height: 5rem;
-}
-
-
-.hiddenPhrase {
-  position: absolute;
-  font-size: 2.5rem;
-  left: 27.3rem;
-  top: 17.5rem;
-}
-
-.hiddenPhrase2 {
-  position: absolute;
-  font-size: 2.5rem;
-  left: 27.3rem;
-  top: 37.5rem;
-
-}
-
-.hiddenPhrase3 {
-  position: absolute;
-  font-size: 2.5rem;
-  left: 27.3rem;
-  top: 57.5rem;
-}
-
-
-.hiddenPhrase4 {
-  position: absolute;
-  font-size: 2.5rem;
-  left: 27.3rem;
-  top: 77.5rem;
-}
-
-.hiddenPhrase5 {
-  position: absolute;
-  font-size: 2.5rem;
-  left: 27.3rem;
-  top: 97.5rem;
-}
-
-.hiddenPhrase6 {
-  position: absolute;
-  font-size: 2.5rem;
-  left: 27.3rem;
-  top: 117.5rem;
-}
-
-.containerArticles:hover {
-  background-color: var(--brand-dark);
-
-}
-
-.containerArticles:hover .articleTitle,
-.containerArticles:hover .articleParagraph {
-  visibility: hidden;
-}
-
-.containerArticles:hover .hiddenPhrase,
-.hiddenPhrase2,
-.hiddenPhrase3,
-.hiddenPhrase4,
-.hiddenPhrase5,
-.hiddenPhrase6 {
-  visibility: hidden;
-  color: var(--brnad-light2);
-
+.containerArticles {
+  background-color: wheat;
 }
 
 /*======================MOBILE======================================*/
