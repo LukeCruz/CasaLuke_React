@@ -7,7 +7,6 @@ backup.scrollReveal.txt
 /.pnp
 .pnp.js
 .vscode
-
 # testing
 /coverage
 
