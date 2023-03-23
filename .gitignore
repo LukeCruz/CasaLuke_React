@@ -11,11 +11,12 @@ backup.scrollReveal.txt
 /coverage
 
 # production
-/frontend/build
+frontend/build
+**/node_modules
 
 # misc
 .DS_Store
-.env.local
+.env
 .env.development.local
 .env.test.local
 .env.production.local
@@ -23,3 +24,6 @@ backup.scrollReveal.txt
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+.firebaserc

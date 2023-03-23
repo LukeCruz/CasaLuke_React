@@ -1,44 +1,73 @@
-/* ==================GERAL=====================*/
-* {
-    margin: 0;
-    box-sizing: border-box;
-  }
-    
-  html {
-    scroll-behavior: smooth;
-  }
-  
-    :root {
-      --primary-color: hsl(170, 100%, 26%);
-      --headline: hsl(210, 11%, 15%);
-      --paragraph: hsl(210, 9%, 31%);
-      --background-button: hsl(0, 0%, 100%);
-      --brand-beige: hsl(39, 100%, 97%);
-      --brand-light: hsl(148, 23%, 89%);
-      --brnad-light2: hsl(180, 14%, 97%);
-      --brand-dark: hsl(170, 100%, 14%);
-    
-      --nav-height: 7.2rem;
-    
-      font-size: 62.5%; /* 1rem = 10px */
-    }
+div footer {
+  /*======width: 375px;TELA MOBILE=*/
 
-    body {
-        width: 100rem;
-        background-color: red;
-    }
-    
-    div footer {
-        /*======width: 375px;TELA MOBILE=*/
-        
-        margin-bottom: 0rem;
-        margin-top: 4rem;
-        background-color: var(--primary-color);
-        display: flex;
-        flex-direction: row;
-      }
-  
-      .one {
-        width: 50rem;
-        margin: 0px;
-      }
+  margin-bottom: 0rem;
+  margin-top: 4rem;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: row;
+}
+
+.containerOnly {
+  padding-top: 0rem;
+  width: 100rem;
+  margin: auto;
+  justify-content: left;
+
+  background-color: var(--brnad-light2);
+}
+.articleTitle {
+  display: flex;
+  margin: auto;
+  padding: auto;
+  margin-top: 10rem;
+  align-items: center;
+}
+.title {
+  font-size: 5rem;
+  position: absolute;
+  top: 30rem;
+  left: 20rem;
+  color: var(--brnad-light2);
+}
+
+.titleTable {
+  color: var(--primary-color);
+  margin-left: 30rem;
+}
+
+.titlePt {
+  margin-left: 5rem;
+  font-size: 3rem;
+}
+
+.paragraphPt {
+  font-size: 1.6rem;
+}
+.imageOne {
+  width: 100rem;
+  height: 40rem;
+  border-radius: 1rem;
+  display: flex;
+  margin: auto;
+}
+
+.containerOnly h1 {
+  color: var(--brand-dark);
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.containerOnly p {
+  width: auto;
+  text-align: left;
+  padding: 7rem;
+}
+
+.list {
+  display: block;
+  float: left;
+  padding-left: 40rem;
+  width: 100rem;
+font-size: 1rem;
+}
