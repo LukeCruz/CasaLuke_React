@@ -3,7 +3,7 @@ backup.actions.txt
 backup.scrollReveal.txt
 
 # dependencies
-/frontend/node_modules
+/node_modules
 /.pnp
 .pnp.js
 
@@ -11,7 +11,7 @@ backup.scrollReveal.txt
 /coverage
 
 # production
-frontend/build
+/build
 **/node_modules
 
 # misc
