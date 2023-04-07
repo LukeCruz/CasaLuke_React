@@ -1,6 +1,7 @@
 import React from 'react';
 import './layout/App.css';
 import './layout/Articles.css';
+import './layout/Services.css';
 import './layout/Article.only.css';
 import './layout/About.css';
 import './layout/Form.css';

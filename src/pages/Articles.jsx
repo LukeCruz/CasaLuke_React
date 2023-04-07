@@ -8,16 +8,16 @@ import ContainerArticles from '../components/componentsArticles/ContainerArticle
 export default function Articles() {
   return (
 
-    <body onScroll="onScroll()" className="" id="homePage">
+    <div>
       <Navigation />
-      <header>
+      <body>
         <div className="" id="">
           <ContainerArticles />
         </div>
 
         <Footer />
-      </header>
+      </body>
       <ButtonFloat />
-    </body>
+    </div>
   );
 };

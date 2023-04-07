@@ -6,8 +6,8 @@ import beachParaty2 from '../../assets/jpeg/Praia.jpeg'
 
 export default function ContainerArticles() {
     return (
-        <body id="homePage">
-            <div>
+        <div className="servicesHome">
+            <body id="homePage">
                 <div className="explorer">
                     <h1 className="textRed">Explore</h1>
                     <h1 className="textWhite"> Paraty</h1>
@@ -77,7 +77,7 @@ export default function ContainerArticles() {
                     </div>
 
                 </div>
-            </div>
-        </body>
+</body>
+        </div>
     )
 }

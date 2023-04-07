@@ -80,24 +80,12 @@ body {
 
 }
 
-.fullCard {
-  display: flex;
-  flex-direction: row;
-}
 .boxFrontAboutOne:hover {
   background-image: url('../assets/logotipos/booking_resized.png');
   width: 367px;
   height: 367px;
 
 }
-
-.textButton {
-  visibility: hidden;
-  color: var(--brand-light);
-  font-size: 0.5rem;
-  transition: 400ms;
-}
-
 
 .boxFrontAboutTwo:hover {
   background-image: url('../assets/logotipos/airbnb_resized.webp');
@@ -111,39 +99,6 @@ body {
   width: 367px;
   height: 367px;
 
-}
-
-.experience {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-height: 300rem;
-  background-color: none;
-}
-
-.photosServices {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.titleCard {
-  margin-left: 10rem;
-  margin-right: 2rem;
-  margin-bottom: 2rem;
-
-}
-.buttonCard{
-  width: 15rem;
-  height: 3rem;
-margin-left: 8rem;
-  top: 70rem;
-  left: 9rem;
-  color: white;
-  font-weight: 700;
-  border-radius: 0.5rem;
-  background-color: var(--primary-color);
-  transition: 400ms;
 }
 
 @media screen and (max-width:1000px) {

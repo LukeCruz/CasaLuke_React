@@ -1,0 +1,58 @@
+.fullCard {
+  display: flex;
+  flex-direction: row;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+height: 300rem;
+  background-color: none;
+}
+
+.photosServices {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.titleCard {
+  margin-left: 10rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+
+}
+.buttonCard{
+  width: 15rem;
+  height: 3rem;
+  margin-left: 8rem;
+  color: white;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  background-color: var(--primary-color);
+  transition: 400ms;
+}
+
+.textButton {
+  visibility: hidden;
+  color: var(--brand-light);
+  font-size: 0.5rem;
+  transition: 400ms;
+}
+
+@media screen and (max-width:800px) {
+.titleCard {
+  margin-left: 3rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+
+}
+.buttonCard{
+  width: 10rem;
+  height: 3rem;
+  margin-left: 4rem;
+  margin-bottom: 0.5rem;
+
+}
+}

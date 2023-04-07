@@ -1156,12 +1156,19 @@ footer div.socialLinks ul li a svg path.pathgoogle {
 
   .listMenuMobile {
     display: flex;
+    margin: auto;
+    padding-bottom: 4rem;
     flex-direction: column;
+    background-color: none;
+    justify-content: center;
+    align-items: center;
+    width: auto;
   }
 
   body nav li.list {
     padding: 4.7rem;
     display: flex;
+width: auto;
     flex-direction: column;
     font-family: "DM Sans";
     font-style: normal;
@@ -1360,6 +1367,19 @@ footer div.socialLinks ul li a svg path.pathgoogle {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+
+
+.carousel {
+  width: 35rem;
+  height: 30rem;
+
+}
+
+.imageCarousel{
+  width: 35rem;
+  height: 30rem;
+  border-radius: 2rem;
+}
 
   /*body {}
   .a {
