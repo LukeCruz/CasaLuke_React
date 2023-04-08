@@ -14,6 +14,8 @@ import ArticlesFour from '../pages/ArticlesPages/ArticleFour';
 import ArticlesFive from '../pages/ArticlesPages/ArticleFive';
 import ArticlesSix from '../pages/ArticlesPages/ArticleSix';
 
+import Hotels from '../pages/MenuFloat/Hotels';
+
 import About from '../pages/About';
 
 export default function Routing() {
@@ -36,6 +38,9 @@ export default function Routing() {
                 <Route path='/6' component={ArticlesSix} />
 
                 <Route path='/about' component={About} />
+
+                <Route path='/hotels' component={Hotels} />
+
 
             </Switch>
 

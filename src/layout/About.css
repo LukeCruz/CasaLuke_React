@@ -35,7 +35,6 @@ body {
 .servicesAbout {
   display: flex;
   flex-direction: row;
-  background-image: url('../assets/png/backgroundCard.png');
   margin: auto;
   padding-left: 20rem;
   align-items: center;
@@ -107,12 +106,17 @@ body {
     width: 100vw;
   }
 
+  .containerPublicPromotion {
+    position: absolute;
+    left: 2rem;
+    top: 75rem;
+}
+
   .servicesAbout {
     width: 30rem;
     display: flex;
     flex-direction: column;
     border-radius: 3rem;
-    background: none;
     padding-left: 0rem;
     align-items: center;
     justify-content: center;

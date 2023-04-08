@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Navigation from '../components/componentsMain/menu/Navigation';
+import MenuExplorer from '../components/componentsArticles/MenuExplorer.jsx';
 import Canva from '../components/componentsMain/menu/OffCanvas';
 import Toast from '../components/componentsMain/container/Toast';
 import About from '../components/componentsMain/container/About';
@@ -13,9 +14,9 @@ export default function Main() {
     <body className="" id="homePage">
       <Navigation />
       <header>
-        <Toast />
+        <MenuExplorer/>
         <h1 className=' titleAbout '>Reserve aqui também :</h1>
-
+        <Toast />
         <div className=" servicesAbout dragscroll " id="">
 
           <div class=" boxFrontAbout boxFrontAboutOne">
