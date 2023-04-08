@@ -12,7 +12,7 @@ div footer {
   padding-top: 0rem;
   width: 100rem;
   margin: auto;
-  justify-content: left;
+  justify-content: center;
 
   background-color: var(--brnad-light2);
 }
@@ -39,11 +39,22 @@ div footer {
 .titlePt {
   margin-left: 5rem;
   font-size: 3rem;
+  width: 30rem;
 }
 
 .paragraphPt {
   font-size: 1.6rem;
+  text-align: justify;
+  padding: auto;
+  margin-bottom: 3rem;
+  margin: 5rem;
 }
+
+.paragraphTree {
+  text-align: justify;
+  margin: 10rem;
+}
+
 .imageOne {
   width: 100rem;
   height: 40rem;
@@ -56,18 +67,76 @@ div footer {
   color: var(--brand-dark);
   padding-top: 1rem;
   padding-bottom: 3rem;
-}
-
-.containerOnly p {
   width: auto;
-  text-align: left;
-  padding: 7rem;
 }
 
+ .titleTable {
+  color: var(--primary-color);
+  margin-left: 30rem;
+}
+
+.titleLocal {
+  color: var(--primary-color);
+  font-size: 3rem;
+  margin: auto;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
 .list {
   display: block;
   float: left;
   padding-left: 40rem;
   width: 100rem;
 font-size: 1rem;
+}
+
+@media screen and (max-width:799px) {
+  .imageOne {
+    width: 35rem;
+    height: 20rem;
+    padding: 0;
+    margin: auto;
+  }
+
+  .title {
+    font-size: 3rem;
+    position: absolute;
+    top: 13rem;
+    left: 1rem;
+  }
+
+.containerOnly {
+  padding-top: 0rem;
+  width: auto;
+  margin: auto;
+  justify-content: center;
+
+  background-color: none;
+}
+
+  .containerOnly p {
+    width: 35rem;
+  }
+
+  .titleTable {
+    margin: auto;
+  }
+
+  .paragraphPt {
+    font-size: 1.3rem;
+    text-align: justify;
+    margin: auto;
+  }
+
+  .list {
+    display: block;
+    padding-left: 0rem;
+    width: 40rem;
+    font-size: 1rem;
+  }
+
+  .containerColumn {
+    display: flex;
+    flex-direction: column;
+  }
 }

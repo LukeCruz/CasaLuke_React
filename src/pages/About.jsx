@@ -23,17 +23,6 @@ export default function Main() {
         <Toast />
         <div className=" servicesAbout dragscroll " id="">
 
-          <div class=" boxFrontAbout boxFrontAboutOne">
-            <div className='textButton'>Booking</div>
-          </div>
-
-          <div class=" boxFrontAbout boxFrontAboutTwo ">
-            <div className='textButton'>Airbnb</div>
-          </div>
-
-          <div class=" boxFrontAbout boxFrontAboutTree ">
-            <div className='textButton'>Expedia</div>
-          </div>
 
         </div>
 

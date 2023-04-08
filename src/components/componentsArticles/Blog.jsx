@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 import guiaParaty from '../../assets/guia-paraty.jpeg';
 import mamangua from '../../assets/mamangua.jpeg';
-import praiaLula from '../../assets/praia-lula.jpeg';
 
 
 export default function Blog() {
@@ -27,7 +26,7 @@ export default function Blog() {
               <div class="blog-card">
 
                 <div class="card-banner">
-                  <img src={praiaLula} width="600" height="390" loading="lazy"
+                  <img src={mamangua} width="600" height="390" loading="lazy"
                     alt="What Do You Think About Cheese Pizza Recipes?" class="w-100"/>
 
                   <div class="badge">Dica</div>
@@ -96,7 +95,7 @@ export default function Blog() {
                     <a href="#" class="card-meta-link">
                       <ion-icon name="person-outline"></ion-icon>
 
-                      <p class="meta-info">DlLuke Paraty</p>
+                      <p class="meta-info">Luke Paraty</p>
                     </a>
 
                   </div>
