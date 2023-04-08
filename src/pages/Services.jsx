@@ -16,7 +16,9 @@ export default function service() {
                         <h1 className="textWhite"> Paraty</h1>
                     </div>
                     <div className="floatMenu">
-                        <div className="explorerFloatMenu"><h3>Hospedagens</h3></div>
+                        <Link to='/Hotels'>
+                          <div className="explorerFloatMenu"><h3>Hospedagens</h3></div>
+                        </Link>
                         <div className="explorerFloatMenu"><h3>Passeios</h3></div>
                         <div className="explorerFloatMenu"><h3>O que fazer</h3></div>
                         <div className="explorerFloatMenu"><h3>Restaurantes</h3></div>

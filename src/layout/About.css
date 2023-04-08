@@ -110,6 +110,7 @@ body {
     position: absolute;
     left: 2rem;
     top: 75rem;
+    width: 20rem;
 }
 
   .servicesAbout {
@@ -124,6 +125,8 @@ body {
 
   .boxFrontAbout {
     padding-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
   }
 
   .boxFrontAbout:hover .textButton {
@@ -137,9 +140,16 @@ body {
   .boxFrontAboutTwo,
   .boxFrontAboutTree {
 
-    width: 30rem;
-    height: 40rem;
+    width: 10rem;
+    height: 20rem;
 
   }
+
+  .blog-list { 
+    display: flex;
+    flex-direction: column;
+}
+
+  .blog-card .card-title { --fs-3: 2.2rem; }
 
 }
