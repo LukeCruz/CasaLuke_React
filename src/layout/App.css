@@ -958,7 +958,7 @@ header footer {
   color: #fffaf1;
 }
 
-header footer h1.logo {
+.logo {
   font-weight: 100;
   text-align: left;
   margin-left: 2.6rem;
@@ -1322,6 +1322,12 @@ width: auto;
   .partnersText {
     margin-bottom: 15.4rem;
   }
+
+.partners {
+  width: 7rem;
+  height: 7rem;
+  margin-left: 10rem;
+}
 
   .containerAbout {
     flex-direction: column;
