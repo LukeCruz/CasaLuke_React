@@ -10,7 +10,6 @@ import beachParaty3 from '../../assets/jpeg/beachParaty.jpeg';
 export default function ContainerArticles() {
     return (
         <div className="servicesHome">
-            <body id="homePage">
       <div className="explorer">
         <h1 className="textRed">Turismo</h1>
         <h1 className="textWhite"> Paraty</h1>
@@ -25,7 +24,6 @@ export default function ContainerArticles() {
                     </div>
                 </div>
                 <Blog />
-            </body>
         </div>
     )
 }

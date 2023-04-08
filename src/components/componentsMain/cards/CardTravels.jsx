@@ -22,7 +22,7 @@ export default function CardHotel() {
     return (
         <div className="experience">
             <div className="fullCard">
-                <h1 className="titleCard">Casa Luke Paraty</h1>
+                <h1 className="titleCard">Passeio de Escuna</h1>
                 <img src={fifthRating} className="userRating"></img>
             </div>
             <a target="_blank"
@@ -41,7 +41,7 @@ export default function CardHotel() {
                 </div>
             </div>
             <div className="fullCard">
-                <h1 className="titleCard">Casa Lunna Paraty</h1>
+                <h1 className="titleCard">Passeio de Lancha</h1>
                 <img src={fifthRating} className="userRating"></img>
             </div>
             <a target="_blank"
@@ -61,7 +61,7 @@ export default function CardHotel() {
             </div>
             <div className="fullCard">
 
-                <h1 className="titleCard">Casa Sole e Mare Paraty</h1>
+                <h1 className="titleCard">Passeio de Jeep</h1>
                 <img src={fifthRating} className="userRating"></img>
             </div>
             <a target="_blank"
@@ -81,7 +81,7 @@ export default function CardHotel() {
             </div>
             <div className="fullCard">
 
-                <h1 className="titleCard">Casa Dos Coqueiros</h1>
+                <h1 className="titleCard">Mergulhos guiados</h1>
                 <img src={fifthRating} className="userRating"></img>
             </div>
             <a target="_blank"
@@ -99,7 +99,7 @@ export default function CardHotel() {
                     <img className='gridPhotos' src={coqueiro3} />
                 </div>
             </div>
-            <h1 className="titleCard">Passeios de Escuna e Lancha</h1>
+            <h1 className="titleCard">Guia Turistico</h1>
             <a target="_blank"
                 rel="noreferrer"
                 href="https://wa.me/message/FZ3T42J3PJ5NH1"

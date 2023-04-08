@@ -3,18 +3,18 @@ import { Link } from "react-router-dom";
 
 export default function MenuExplorer(){
   return (
-    <div>
+    <div className="menuExplorer">
       <div className="floatMenu">
         <Link to='/Hotels'>
           <div className="explorerFloatMenu"><h3>Hospedagens</h3></div>
         </Link>
-        <Link to=''>
+        <Link to='travels'>
           <div className="explorerFloatMenu"><h3>Passeios</h3></div>
         </Link>
-        <Link to=''>
+        <Link to='articles'>
           <div className="explorerFloatMenu"><h3>O que fazer</h3></div>
         </Link>
-        <Link to=''>
+        <Link to='/restaurants'>
           <div className="explorerFloatMenu"><h3>Restaurantes</h3></div>
         </Link>
       </div>

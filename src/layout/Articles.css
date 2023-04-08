@@ -126,6 +126,7 @@ nav.scroll {
 .explorer {
   display: flex;
   flex-direction: table-row;
+  margin-top: 9rem;
 }
 
 .textRed {

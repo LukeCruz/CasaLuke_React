@@ -6,17 +6,16 @@ import Formulary from '../pages/Form';
 import api from '../featch';
 import articles from '../pages/Articles';
 import services from '../pages/Services';
-import Restaurant from '../components/componentsMain/cards/CardRestaurant';
+import About from '../pages/About';
+import Travels from '../pages/MenuFloat/Travels';
+import Hotels from '../pages/MenuFloat/Hotels';
+import Restaurant from '../pages/MenuFloat/Restaurant';
 import ArticlesOne from '../pages/ArticlesPages/ArticleOne';
 import ArticlesTwo from '../pages/ArticlesPages/ArticleTwo';
 import ArticlesTree from '../pages/ArticlesPages/ArticleTree';
 import ArticlesFour from '../pages/ArticlesPages/ArticleFour';
 import ArticlesFive from '../pages/ArticlesPages/ArticleFive';
 import ArticlesSix from '../pages/ArticlesPages/ArticleSix';
-
-import Hotels from '../pages/MenuFloat/Hotels';
-
-import About from '../pages/About';
 
 export default function Routing() {
     return (
@@ -28,7 +27,10 @@ export default function Routing() {
                 <Route path="/api" component={api} />
                 <Route path='/articles' component={articles} />
                 <Route path='/services' component={services} />
-                <Route path='/restaurantes' component={Restaurant} />
+                <Route path='/restaurants' component={Restaurant} />
+                <Route path='/hotels' component={Hotels} />
+                <Route path='/travels' component={Travels} />
+
 
                 <Route path='/1' component={ArticlesOne} />
                 <Route path='/2' component={ArticlesTwo} />
@@ -38,9 +40,6 @@ export default function Routing() {
                 <Route path='/6' component={ArticlesSix} />
 
                 <Route path='/about' component={About} />
-
-                <Route path='/hotels' component={Hotels} />
-
 
             </Switch>
 
