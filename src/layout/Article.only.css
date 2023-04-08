@@ -1,3 +1,39 @@
+
+:root {
+  --primary-color: hsl(170, 100%, 26%);
+  --headline: hsl(210, 11%, 15%);
+  --paragraph: hsl(210, 9%, 31%);
+  --background-button: hsl(0, 0%, 100%);
+  --brand-beige: hsl(39, 100%, 97%);
+  --brand-light: hsl(148, 23%, 89%);
+  --brnad-light2: hsl(180, 14%, 97%);
+  --brand-dark: hsl(170, 100%, 14%);
+  --rich-black-fogra-29: hsl(210, 26%, 7%);
+  --champagne-pink_20: hsla(23, 61%, 86%, 0.2);
+  --independence_30: hsla(245, 17%, 29%, 0.3);
+  --gray-x-11-gray: hsl(0, 0%, 73%);
+  --champagne-pink: hsl(23, 61%, 86%);
+  --spanish-gray: hsl(0, 0%, 60%);
+  --sonic-silver: hsl(0, 0%, 47%);
+  --deep-saffron: hsl(32, 100%, 59%);
+  --dark-orange: hsl(28, 100%, 58%);
+  --desert-sand: hsl(23, 49%, 82%);
+  --isabelline: hsl(38, 44%, 96%);
+  --gainsboro: hsl(0, 0%, 87%);
+  --tangerine: hsl(31, 84%, 50%);
+  --cinnabar: hsl(3, 90%, 55%);
+  --black_95: hsla(0, 0%, 0%, 0.95);
+  --cultured: hsl(0, 0%, 93%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --onyx: hsl(0, 0%, 27%);
+
+  --nav-height: 7.2rem;
+
+  font-size: 62.5%;
+  /* 1rem = 10px */
+}
+
 div footer {
   /*======width: 375px;TELA MOBILE=*/
 
@@ -8,6 +44,22 @@ div footer {
   flex-direction: row;
 }
 
+span {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+a:link {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+ color: var(--dark-orange);
+}
 .containerOnly {
   padding-top: 0rem;
   width: 100rem;
@@ -16,6 +68,7 @@ div footer {
 
   background-color: var(--brnad-light2);
 }
+
 .articleTitle {
   display: flex;
   margin: auto;
@@ -102,7 +155,7 @@ font-size: 1rem;
     font-size: 3rem;
     position: absolute;
     top: 13rem;
-    left: 1rem;
+    left: 4rem;
   }
 
 .containerOnly {

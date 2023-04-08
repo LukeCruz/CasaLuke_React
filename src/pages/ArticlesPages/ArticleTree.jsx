@@ -1,12 +1,11 @@
 import React from 'react';
-import Table from 'react-bootstrap/Table';
 
 import Navigation from '../../components/componentsMain/menu/Navigation';
 import Footer from '../../components/componentsMain/container/Footer';
 import ButtonFloat from '../../components/componentsMain/buttons/ButtonFloat';
 import SocialLinks from '../../components/componentsArticles/SocialLinks';
+import MenuExplorer from '../../components/componentsArticles/MenuExplorer';
 
-import imageOne from '../../assets/jpeg/beachParaty.jpeg';
 import mamangua1 from '../../assets/mamangua-1.jpeg';
 import mamangua2 from '../../assets/mamangua-2.jpeg';
 import mamangua3 from '../../assets/mamangua-3.jpeg';
@@ -90,9 +89,24 @@ export default function ArticlesOne() {
           <br />
           <br />
         </p>
-
       </div>
+
+      <section class="section section-divider white blog" id="blog">
+        <div class="container">
+          <p class="section-subtitle">Serviços</p>
+
+          <h1 class="h2 section-title">
+            Nossos <span class="span">Serviços</span>
+          </h1>
+
+          <p class="section-text">
+            Aqui você conhece Paraty.
+          </p>
+        </div>
+      </section>
+      <MenuExplorer/>
       <Footer />
+      <ButtonFloat/>
     </body>
   );
 };
