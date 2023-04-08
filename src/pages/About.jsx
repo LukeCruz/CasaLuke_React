@@ -14,6 +14,10 @@ export default function Main() {
     <body className="" id="homePage">
       <Navigation />
       <header>
+      <div className="explorer">
+        <h1 className="textRed">Explore</h1>
+        <h1 className="textWhite"> Paraty</h1>
+      </div>
         <MenuExplorer/>
         <h1 className=' titleAbout '>Reserve aqui também :</h1>
         <Toast />

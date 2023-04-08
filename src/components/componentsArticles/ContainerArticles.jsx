@@ -11,6 +11,10 @@ export default function ContainerArticles() {
     return (
         <div className="servicesHome">
             <body id="homePage">
+      <div className="explorer">
+        <h1 className="textRed">Turismo</h1>
+        <h1 className="textWhite"> Paraty</h1>
+      </div>
                 <MenuExplorer />
                 <div className="photos">
                     <img className='gridPhotosRefer' src={beachParaty} />
