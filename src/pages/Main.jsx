@@ -18,14 +18,14 @@ import crab from '../assets/png/crab.png';
 export default function Main() {
   return (
 
-    <body onScroll="onScroll()" className="" id="homePage">
+    <body onScroll="onScroll()" className="" id="homePage" data-testid='home-test'>
       <Navigation />
       <header>
-        <div className="" id="">
+        <div className="" id="" data-testid='card-test'>
           <CardsOnTop />
           <ImageWoman />
 
-          <div className="containers">
+          <div className="containers" data-testid='containers-test'>
             <ContainerInfoLeft />
             <ContainerInfo />
             <ContainerInfoRight />
@@ -34,7 +34,7 @@ export default function Main() {
         </div>
         <ControlledCarousel />
 
-        <div className='containerAbout'>
+        <div className='containerAbout' data-testid='about-test'>
           <About />
           <Contact />
           <img src={crab} className='crab'/>

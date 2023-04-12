@@ -17,7 +17,7 @@ export default function ButtonOpenMenu() {
       <button
         onClick={showOrHide}
         className="openButton"
-        id="openButton">
+        id="openButton" data-testid='btnOpen-test'>
         <svg
           className="menuLateral"
           width="40"

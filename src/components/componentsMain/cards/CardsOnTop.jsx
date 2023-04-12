@@ -10,7 +10,7 @@ import flip from '../../../assets/png/flip-flops.png'
 
 export default function CardsOnTop() {
   return (
-          <div className='containerLogotipo'>
+          <div className='containerLogotipo' data-testid='logotipo'>
             <div className='logoContainerImage'>
               <img className='logoContainerLogotipo' src={logo} />
               <div className='start' >

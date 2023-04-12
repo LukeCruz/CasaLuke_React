@@ -12,7 +12,7 @@ function DismissibleExample() {
   const toggleShowB = () => setShowB(!showB);
 
   return (
-    <Row className='containerPublicPromotion'>
+    <Row className='containerPublicPromotion' data-testid='toast-test'>
       <Col md={6} className="mb-2">
         <Button onClick={toggleShowA} className="mb-2">
           Desconto por tempo <strong>Limitado</strong>
