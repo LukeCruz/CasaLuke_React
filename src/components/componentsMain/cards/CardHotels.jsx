@@ -2,18 +2,18 @@ import fifthRating from '../../../assets/png/fifthRating.png';
 import luke1 from '../../../assets/services/casaluke.jpg';
 import luke2 from '../../../assets/services/casaluke2.jpg';
 import luke3 from '../../../assets/services/casaluke3.jpg';
-import biri1 from '../../../assets/services/biri.jpg';
-import biri2 from '../../../assets/services/biri2.jpg';
-import biri3 from '../../../assets/services/otherr.jpg';
+import suites1 from '../../../assets/png/suite1.jpg';
+import suites2 from '../../../assets/png/suite2.jpg';
+import suites3 from '../../../assets/png/suite3.jpg';
 import lunna1 from '../../../assets/services/lunna1.jpg';
-import lunna2 from '../../../assets/services/lunna2.jpg';
-import lunna3 from '../../../assets/services/lunna3.jpg';
-import sole1 from '../../../assets/services/sole1.jpg';
+import lunna2 from '../../../assets/png/lunna1.png';
+import lunna3 from '../../../assets/png/lunna3.png';
+import sole1 from '../../../assets/png/sole1.png';
 import sole2 from '../../../assets/services/sole2.jpg';
 import sole3 from '../../../assets/services/sole3.jpg';
-import coqueiro1 from '../../../assets/services/coqueiro1.jpg';
-import coqueiro2 from '../../../assets/services/coqueiro2.jpg';
-import coqueiro3 from '../../../assets/services/coqueiro3.jpg';
+import recanto1 from '../../../assets/png/recanto1.png';
+import recanto2 from '../../../assets/png/recanto2.png';
+import recanto3 from '../../../assets/png/recanto3.png';
 import escuna1 from '../../../assets/services/escuna1.jpg';
 import escuna2 from '../../../assets/services/escuna2.jpg';
 import escuna3 from '../../../assets/services/escuna3.jpg';
@@ -81,7 +81,7 @@ export default function CardHotel() {
             </div>
             <div className="fullCard">
 
-                <h1 className="titleCard">Casa Dos Coqueiros</h1>
+                <h1 className="titleCard">Recanto Taquari</h1>
                 <img src={fifthRating} className="userRating"></img>
             </div>
             <a target="_blank"
@@ -93,13 +93,13 @@ export default function CardHotel() {
             </a>
 
             <div className="photosServices">
-                <img className='gridPhotosRefer' src={coqueiro1} />
+                <img className='gridPhotosRefer' src={recanto1} />
                 <div className="drawPhotos">
-                    <img className='gridPhotos' src={coqueiro2} />
-                    <img className='gridPhotos' src={coqueiro3} />
+                    <img className='gridPhotos' src={recanto2} />
+                    <img className='gridPhotos' src={recanto3} />
                 </div>
             </div>
-            <h1 className="titleCard">Passeios de Escuna e Lancha</h1>
+            <h1 className="titleCard">Sobrado Dolphin</h1>
             <a target="_blank"
                 rel="noreferrer"
                 href="https://wa.me/message/FZ3T42J3PJ5NH1"
@@ -116,7 +116,7 @@ export default function CardHotel() {
                 </div>
             </div>
 
-            <h1 className="titleCard">Restaurantes Parceiros</h1>
+            <h1 className="titleCard">Suites JaM Paraty</h1>
             <a target="_blank"
                 rel="noreferrer"
                 href="https://wa.me/message/FZ3T42J3PJ5NH1"
@@ -126,10 +126,10 @@ export default function CardHotel() {
             </a>
             <div className="photosServices">
 
-                <img className='gridPhotosRefer' src={biri1} />
+                <img className='gridPhotosRefer' src={suites1} />
                 <div className="drawPhotos">
-                    <img className='gridPhotos' src={biri2} />
-                    <img className='gridPhotos' src={biri3} />
+                    <img className='gridPhotos' src={suites2} />
+                    <img className='gridPhotos' src={suites3} />
                 </div>
             </div>
         </div>

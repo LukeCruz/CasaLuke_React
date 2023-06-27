@@ -394,23 +394,6 @@ header header div {
 	display: inline-block;
 }
 
-.listLink::after, .listLink::before {
-	content: '';
-	display: block;
-	text-decoration: none ;
-   color:#FFF;
-	background: var(--background-button);
-	width: 0;
-	height: 2px;
-	border-radius: 4px;
-	margin: 6px auto 6px auto;
-	transition: all .2s ease;
-}
-
-.listLink:hover::after, .listLink:hover::before {
-  text-decoration: none;
-	width: 100%;
-}
 
 .logoContainerLogotipo {
   width: 30rem;

@@ -1,25 +1,16 @@
 import fifthRating from '../../../assets/png/fifthRating.png';
-import luke1 from '../../../assets/services/casaluke.jpg';
-import luke2 from '../../../assets/services/casaluke2.jpg';
-import luke3 from '../../../assets/services/casaluke3.jpg';
-import biri1 from '../../../assets/services/biri.jpg';
-import biri2 from '../../../assets/services/biri2.jpg';
-import biri3 from '../../../assets/services/otherr.jpg';
-import lunna1 from '../../../assets/services/lunna1.jpg';
-import lunna2 from '../../../assets/services/lunna2.jpg';
-import lunna3 from '../../../assets/services/lunna3.jpg';
-import sole1 from '../../../assets/services/sole1.jpg';
-import sole2 from '../../../assets/services/sole2.jpg';
-import sole3 from '../../../assets/services/sole3.jpg';
-import coqueiro1 from '../../../assets/services/coqueiro1.jpg';
-import coqueiro2 from '../../../assets/services/coqueiro2.jpg';
-import Navigation from '../menu/Navigation';
-import MenuExplorer from '../../componentsArticles/MenuExplorer';
-
-import coqueiro3 from '../../../assets/services/coqueiro3.jpg';
-import escuna1 from '../../../assets/services/escuna1.jpg';
-import escuna2 from '../../../assets/services/escuna2.jpg';
-import escuna3 from '../../../assets/services/escuna3.jpg';
+import coqueiro1 from '../../../assets/jpeg/coqueiro.jpeg';
+import coqueiro2 from '../../../assets/jpeg/coqueiro2.jpeg';
+import coqueiro3 from '../../../assets/jpeg/camarao2.png';
+import bardapraia1 from '../../../assets/jpeg/bardapraia1.jpeg';
+import bardapraia2 from '../../../assets/jpeg/bardapraia2.jpeg';
+import bardapraia3 from '../../../assets/jpeg/baedapraia3.jpeg';
+import francisco1 from '../../../assets/jpeg/francisco1.jpeg';
+import francisco2 from '../../../assets/jpeg/francisco2.jpeg';
+import francisco3 from '../../../assets/jpeg/francisco3.jpeg';
+import toca1 from '../../../assets/jpeg/toca1.webp';
+import toca2 from '../../../assets/jpeg/toca2.jpeg';
+import toca3 from '../../../assets/jpeg/toca3.webp';
 
 export default function CardRestaurant() {
   return (
@@ -39,10 +30,10 @@ export default function CardRestaurant() {
       </a>
       <div className="photosServices">
 
-        <img className='gridPhotosRefer' src={luke2} />
+        <img className='gridPhotosRefer' src={coqueiro1} />
         <div className="drawPhotos">
-          <img className='gridPhotos' src={luke1} />
-          <img className='gridPhotos' src={luke3} />
+          <img className='gridPhotos' src={coqueiro2} />
+          <img className='gridPhotos' src={coqueiro3} />
         </div>
       </div>
       <div className="fullCard">
@@ -60,10 +51,10 @@ export default function CardRestaurant() {
       </a>
       <div className="photosServices">
 
-        <img className='gridPhotosRefer' src={lunna1} />
+        <img className='gridPhotosRefer' src={bardapraia2} />
         <div className="drawPhotos">
-          <img className='gridPhotos' src={lunna2} />
-          <img className='gridPhotos' src={lunna3} />
+          <img className='gridPhotos' src={bardapraia1} />
+          <img className='gridPhotos' src={bardapraia3} />
         </div>
       </div>
       <div className="fullCard">
@@ -82,10 +73,10 @@ export default function CardRestaurant() {
       </a>
       <div className="photosServices">
 
-        <img className='gridPhotosRefer' src={sole1} />
+        <img className='gridPhotosRefer' src={francisco1} />
         <div className="drawPhotos">
-          <img className='gridPhotos' src={sole2} />
-          <img className='gridPhotos' src={sole3} />
+          <img className='gridPhotos' src={francisco2} />
+          <img className='gridPhotos' src={francisco3} />
         </div>
       </div>
       <div className="fullCard">
@@ -103,45 +94,13 @@ export default function CardRestaurant() {
       </a>
 
       <div className="photosServices">
-        <img className='gridPhotosRefer' src={coqueiro1} />
+        <img className='gridPhotosRefer' src={toca1} />
         <div className="drawPhotos">
-          <img className='gridPhotos' src={coqueiro2} />
-          <img className='gridPhotos' src={coqueiro3} />
+          <img className='gridPhotos' src={toca2} />
+          <img className='gridPhotos' src={toca3} />
         </div>
       </div>
-      <h1 className="titleCard">Passeios de Escuna e Lancha</h1>
-      <a target="_blank"
-        rel="noreferrer"
-        href="https://wa.me/message/FZ3T42J3PJ5NH1"
-      >
-        <button className="buttonCard" >Contrate aqui!</button>
-
-      </a>
-      <div className="photosServices">
-
-        <img className='gridPhotosRefer' src={escuna1} />
-        <div className="drawPhotos">
-          <img className='gridPhotos' src={escuna2} />
-          <img className='gridPhotos' src={escuna3} />
-        </div>
-      </div>
-
-      <h1 className="titleCard">Restaurantes Parceiros</h1>
-      <a target="_blank"
-        rel="noreferrer"
-        href="https://wa.me/message/FZ3T42J3PJ5NH1"
-      >
-        <button className="buttonCard" >Saiba mais...</button>
-
-      </a>
-      <div className="photosServices">
-
-        <img className='gridPhotosRefer' src={biri1} />
-        <div className="drawPhotos">
-          <img className='gridPhotos' src={biri2} />
-          <img className='gridPhotos' src={biri3} />
-        </div>
-      </div>
+      
     </div>
   )
 }

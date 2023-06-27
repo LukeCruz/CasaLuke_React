@@ -1,28 +1,29 @@
 import fifthRating from '../../../assets/png/fifthRating.png';
-import luke1 from '../../../assets/services/casaluke.jpg';
-import luke2 from '../../../assets/services/casaluke2.jpg';
-import luke3 from '../../../assets/services/casaluke3.jpg';
-import biri1 from '../../../assets/services/biri.jpg';
-import biri2 from '../../../assets/services/biri2.jpg';
-import biri3 from '../../../assets/services/otherr.jpg';
-import lunna1 from '../../../assets/services/lunna1.jpg';
-import lunna2 from '../../../assets/services/lunna2.jpg';
-import lunna3 from '../../../assets/services/lunna3.jpg';
-import sole1 from '../../../assets/services/sole1.jpg';
-import sole2 from '../../../assets/services/sole2.jpg';
-import sole3 from '../../../assets/services/sole3.jpg';
-import coqueiro1 from '../../../assets/services/coqueiro1.jpg';
-import coqueiro2 from '../../../assets/services/coqueiro2.jpg';
-import coqueiro3 from '../../../assets/services/coqueiro3.jpg';
-import escuna1 from '../../../assets/services/escuna1.jpg';
-import escuna2 from '../../../assets/services/escuna2.jpg';
-import escuna3 from '../../../assets/services/escuna3.jpg';
+import lancha1 from '../../../assets/jpeg/lancha1.jpeg';
+import lancha2 from '../../../assets/jpeg/lancha2.jpeg';
+import lancha3 from '../../../assets/jpeg/lancha3.jpeg';
+
+import jeep1 from '../../../assets/jpeg/jeep2.jpeg';
+import jeep2 from '../../../assets/jpeg/jeep3.jpeg';
+import jeep3 from '../../../assets/jpeg/jeep3.jpeg';
+
+import guia1 from '../../../assets/jpeg/guia1.png';
+import guia2 from '../../../assets/jpeg/guia2.jpeg';
+import guia3 from '../../../assets/jpeg/guia3.jpeg';
+
+import mergulho1 from '../../../assets/jpeg/mergulho2.jpeg';
+import mergulho2 from '../../../assets/png/mergulho3.png';
+import mergulho3 from '../../../assets/jpg/mergulho1.jpg';
+
+import escuna1 from '../../../assets/jpeg/escuna3.jpeg';
+import escuna2 from '../../../assets/jpg/escuna1.jpg';
+import escuna3 from '../../../assets/jpg/escuna2.jpg';
 
 export default function CardHotel() {
     return (
         <div className="experience">
             <div className="fullCard">
-                <h1 className="titleCard">Passeio de Escuna</h1>
+                <h1 className="titleCard">Passeio de Lancha</h1>
                 <img src={fifthRating} className="userRating"></img>
             </div>
             <a target="_blank"
@@ -34,14 +35,14 @@ export default function CardHotel() {
             </a>
             <div className="photosServices">
 
-                <img className='gridPhotosRefer' src={luke2} />
+                <img className='gridPhotosRefer' src={lancha1} />
                 <div className="drawPhotos">
-                    <img className='gridPhotos' src={luke1} />
-                    <img className='gridPhotos' src={luke3} />
+                    <img className='gridPhotos' src={lancha2} />
+                    <img className='gridPhotos' src={lancha3} />
                 </div>
             </div>
             <div className="fullCard">
-                <h1 className="titleCard">Passeio de Lancha</h1>
+                <h1 className="titleCard">Passeio de Escuna</h1>
                 <img src={fifthRating} className="userRating"></img>
             </div>
             <a target="_blank"
@@ -53,10 +54,10 @@ export default function CardHotel() {
             </a>
             <div className="photosServices">
 
-                <img className='gridPhotosRefer' src={lunna1} />
+                <img className='gridPhotosRefer' src={escuna1} />
                 <div className="drawPhotos">
-                    <img className='gridPhotos' src={lunna2} />
-                    <img className='gridPhotos' src={lunna3} />
+                    <img className='gridPhotos' src={escuna2} />
+                    <img className='gridPhotos' src={escuna3} />
                 </div>
             </div>
             <div className="fullCard">
@@ -73,10 +74,10 @@ export default function CardHotel() {
             </a>
             <div className="photosServices">
 
-                <img className='gridPhotosRefer' src={sole1} />
+                <img className='gridPhotosRefer' src={jeep1} />
                 <div className="drawPhotos">
-                    <img className='gridPhotos' src={sole2} />
-                    <img className='gridPhotos' src={sole3} />
+                    <img className='gridPhotos' src={jeep2} />
+                    <img className='gridPhotos' src={jeep3} />
                 </div>
             </div>
             <div className="fullCard">
@@ -93,10 +94,10 @@ export default function CardHotel() {
             </a>
 
             <div className="photosServices">
-                <img className='gridPhotosRefer' src={coqueiro1} />
+                <img className='gridPhotosRefer' src={mergulho1} />
                 <div className="drawPhotos">
-                    <img className='gridPhotos' src={coqueiro2} />
-                    <img className='gridPhotos' src={coqueiro3} />
+                    <img className='gridPhotos' src={mergulho2} />
+                    <img className='gridPhotos' src={mergulho3} />
                 </div>
             </div>
             <h1 className="titleCard">Guia Turistico</h1>
@@ -109,27 +110,10 @@ export default function CardHotel() {
             </a>
             <div className="photosServices">
 
-                <img className='gridPhotosRefer' src={escuna1} />
+                <img className='gridPhotosRefer' src={guia1} />
                 <div className="drawPhotos">
-                    <img className='gridPhotos' src={escuna2} />
-                    <img className='gridPhotos' src={escuna3} />
-                </div>
-            </div>
-
-            <h1 className="titleCard">Restaurantes Parceiros</h1>
-            <a target="_blank"
-                rel="noreferrer"
-                href="https://wa.me/message/FZ3T42J3PJ5NH1"
-            >
-                <button className="buttonCard" >Saiba mais...</button>
-
-            </a>
-            <div className="photosServices">
-
-                <img className='gridPhotosRefer' src={biri1} />
-                <div className="drawPhotos">
-                    <img className='gridPhotos' src={biri2} />
-                    <img className='gridPhotos' src={biri3} />
+                    <img className='gridPhotos' src={guia2} />
+                    <img className='gridPhotos' src={guia3} />
                 </div>
             </div>
         </div>
