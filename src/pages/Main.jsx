@@ -33,13 +33,12 @@ export default function Main() {
 
         </div>
         <ControlledCarousel />
-
         <div className='containerAbout' data-testid='about-test'>
           <About />
           <Contact />
           <img src={crab} className='crab'/>
-        </div>
-
+          </div>
+          
         <Footer />
       </header>
 

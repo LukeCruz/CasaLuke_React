@@ -1,6 +1,8 @@
 import React from 'react';
 
 import ButtonTop from '../buttons/ButtonTop';
+import Footer from '../container/Footer';
+import ButtonFloat from '../buttons/ButtonFloat';
 
 import check from '../../../assets/png/check.png';
 import reputation from '../../../assets/png/award.png';
@@ -48,6 +50,7 @@ export default function CardsOnTop() {
               </p>
               <ButtonTop />
             </div>
+            <ButtonFloat/>
           </div>
   );
 }

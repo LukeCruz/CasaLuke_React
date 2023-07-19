@@ -1,3 +1,6 @@
+import Footer from '../container/Footer';
+import ButtonFloat from '../buttons/ButtonFloat';
+
 import fifthRating from '../../../assets/png/fifthRating.png';
 import luke1 from '../../../assets/services/casaluke.jpg';
 import luke2 from '../../../assets/services/casaluke2.jpg';
@@ -132,6 +135,8 @@ export default function CardHotel() {
                     <img className='gridPhotos' src={suites3} />
                 </div>
             </div>
+            <Footer/>
+            <ButtonFloat/>
         </div>
     )
 }
