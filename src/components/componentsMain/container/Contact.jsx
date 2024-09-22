@@ -21,7 +21,7 @@ export default function Contact() {
         <img src={contact} className='contactsIcon' />
         <p className="info">
           Informações: (24) 9 9922-3881<br />
-          Reservas: (24) 9 9860-3787</p>
+          Reservas: (24) 9 9922-3881</p>
       </div>
       <ButtonTop />
     </div>
